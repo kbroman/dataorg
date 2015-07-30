@@ -1,8 +1,8 @@
 ---
 layout: page
 title: data organization
-tagline: a minimal tutorial
-description: Minimal tutorial on organizing data in spreadsheets
+tagline: a tutorial
+description: A tutorial on organizing data in spreadsheets
 ---
 
 I'm just getting started with this.
