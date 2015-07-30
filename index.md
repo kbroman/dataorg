@@ -30,7 +30,7 @@ suggestions or corrections, please
 [submit an issue](https://github.com/kbroman/dataorg/issues).
 
 
-Also see my [tutorials](http://kbroman.org/pages/tutorials),
+Also see my [tutorials](http://kbroman.org/pages/tutorials)
 on
 [git/github](http://kbroman.org/github_tutorial),
 [knitr](http://kbroman.org/knitr_knutshell),
