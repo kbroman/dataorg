@@ -1,7 +1,7 @@
 ---
 layout: page
 title: data organization
-tagline: a tutorial
+tagline: organizing data in spreadsheets
 description: A tutorial on organizing data in spreadsheets
 ---
 
