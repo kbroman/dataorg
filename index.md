@@ -26,10 +26,11 @@ Eventually, I'll cover topics like these:
 
 The source for this minimal tutorial is [on github](http://github.com/kbroman/dataorg).
 
-Also see my
-[git/github guide](http://kbroman.org/github_tutorial),
-[knitr in a knutshell tutorial](http://kbroman.org/knitr_knutshell),
-[minimal make tutorial](http://kbroman.org/minimal_make),
-[R package primer](http://kbroman.org/pkg_primer),
-[tutorial on making a simple web site with GitHub Pages](http://kbroman.org/simple_site),
-and [initial steps towards reproducible research](http://kbroman.org/steps2rr).
+Also see my [other tutorials](http://kbroman.org/pages/tutorials),
+on
+[git/github](http://kbroman.org/github_tutorial),
+[knitr](http://kbroman.org/knitr_knutshell),
+[GNU make](http://kbroman.org/minimal_make),
+[R packages](http://kbroman.org/pkg_primer),
+[making a web site with GitHub Pages](http://kbroman.org/simple_site),
+and [reproducible research](http://kbroman.org/steps2rr).
