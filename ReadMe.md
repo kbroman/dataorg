@@ -2,6 +2,8 @@
 
 This is a short tutorial on organizing data in spreadsheets.
 
+View the thing [here](http://kbroman.org/dataorg).
+
 ---
 
 To the extent possible under law,
