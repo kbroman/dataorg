@@ -24,7 +24,11 @@ Eventually, I'll cover topics like these:
 
 ---
 
-The source for this minimal tutorial is [on github](http://github.com/kbroman/dataorg).
+The source for this tutorial is
+[on github](http://github.com/kbroman/dataorg).  If you have
+suggestions or corrections, please
+[submit an issue](https://github.com/kbroman/dataorg/issues).
+
 
 Also see my [other tutorials](http://kbroman.org/pages/tutorials),
 on
