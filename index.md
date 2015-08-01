@@ -5,8 +5,32 @@ tagline: organizing data in spreadsheets
 description: A tutorial on organizing data in spreadsheets
 ---
 
-I'm just getting started with this.
+My collaborators sometimes ask me, "In what form would you like the data?"
+My response is always, "In its current form!" If the data need to be
+reformatted, it's much better for me to write a script than
+for them to do a bunch of cut-and-paste. I'm a strong proponent of the idea
+that data analysts should be able to handle any data files they might
+receive.
 
+But in many cases, I have to spend **a lot** of time writing scripts
+to rearrange the layout of the data. And how would you like your data
+analysts to spend their time? Reorganizing data, or really exploring
+data?
+
+Most of my collaborators enter and store their data in spreadsheets,
+and mostly Microsoft Excel. Before starting to enter data into a
+spreadsheet, it's good to spend some time thinking about the
+layout. The way that you organize the data in spreadsheets can have a
+big impact on the ease of downstream analyses.
+
+This is a tutorial on that topic: *how to organize data in
+spreadsheets*. For complex, high-dimensional data, it may be better to
+use a formal database. But for many projects, spreadsheets are
+perfectly fine. But data in spreadsheets can be pretty and easy to
+work with, or they can be a sloppy mess requiring serious
+downstream reorganization efforts.
+
+I'm just getting started with this.
 Eventually, I'll cover topics like these:
 
 - Be consistent.
