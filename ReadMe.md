@@ -9,7 +9,7 @@ in the
 [`pages`](https://github.com/kbroman/dataorg/tree/gh-pages/pages)
 subdirectory, only edit the `.Rmd` files; the `.md` files are built
 from the `.Rmd` files with [knitr](http://yihui.name/knitr/).
-To compile the files, you'll need my
+To compile the files, you'll need the
 [R/broman](https://github.com/kbroman/broman) package; install it with
 `devtools::install_github("kbroman/broman")`.
 
