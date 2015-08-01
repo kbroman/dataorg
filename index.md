@@ -28,7 +28,7 @@ spreadsheets*. For complex, high-dimensional data, it may be better to
 use a formal database. But for many projects, spreadsheets are
 perfectly fine. But data in spreadsheets can be pretty and easy to
 work with, or they can be a sloppy mess requiring serious
-downstream reorganization efforts.
+downstream reorganization efforts. We want to avoid the latter.
 
 I'm just getting started with this.
 Eventually, I'll cover topics like these:
