@@ -15,4 +15,4 @@ description: "Data organization: Make backups"
 
 ---
 
-Next up: [Use Excel features to avoid data entry mistakes](validation.html).
+Next up: [Use data validation to avoid data entry mistakes](validation.html).

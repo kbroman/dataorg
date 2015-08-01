@@ -45,7 +45,7 @@ these mostly just have some brief notes to myself.
 - [Don't use font color or highlighting as data](pages/no_highlighting.html).
 - [Choose good names for things](pages/names.html).
 - [Make backups](pages/backups.html).
-- [Use Excel features to avoid data entry mistakes](pages/validation.html).
+- [Use data validation to avoid data entry mistakes](pages/validation.html).
 - [Other things to avoid](pages/avoid.html).
 
 - [Other resources](pages/resources.html)
