@@ -1,6 +1,6 @@
 ## Data Organization: A tutorial
 
-This is a short tutorial on organizing data in spreadsheets.
+This is a tutorial on organizing data in spreadsheets.
 
 View the thing [here](http://kbroman.org/dataorg).
 
