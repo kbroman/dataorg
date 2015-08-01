@@ -4,9 +4,34 @@ title: No empty cells
 description: "Data organization: No empty cells"
 ---
 
+```{r knitr_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=7, fig.height=2.5,
+                      fig.path="Figs/no_empty_cells-",
+                      dev="svg", echo=FALSE)
+library(broman)
+```
+
 Fill in all cells. Use some common code for missing data.
 Point to the example of putting a date in a column only every so
 often. (need an illustration for this)
+
+```{r skipping_cells}
+mat <- data.frame(id=101:107,
+                  date=c("2015-06-14", "", "2015-06-18", "", "", "2015-06-20", ""),
+                  glucose=myround(c(149.3, 95.3, 97.5, 117.0, 108.0, 149.0, 169.4), 1),
+                  stringsAsFactors=FALSE)
+excel_fig(mat)
+```
+
+This is better:
+
+```{r skipping_cells_fixed}
+mat$date[2] <- mat$date[1]
+mat$date[4:5] <- mat$date[3]
+mat$date[7] <- mat$date[6]
+excel_fig(mat)
+```
+
 
 ---
 
