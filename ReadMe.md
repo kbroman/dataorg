@@ -4,6 +4,12 @@ This is a short tutorial on organizing data in spreadsheets.
 
 View the thing [here](http://kbroman.org/dataorg).
 
+I would be glad for suggestions or corrections. If you edit the files
+in the
+[`pages`](https://github.com/kbroman/dataorg/tree/gh-pages/pages)
+subdirectory, only edit the `.Rmd` files; the `.md` files are built
+from the `.Rmd` files with [knitr](http://yihui.name/knitr/).
+
 ---
 
 To the extent possible under law,

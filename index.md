@@ -31,18 +31,22 @@ work with, or they can be a sloppy mess requiring serious
 downstream reorganization efforts. We want to avoid the latter.
 
 I'm just getting started with this.
-Eventually, I'll cover topics like these:
+Eventually, I'll cover topics like the following, but at the moment
+these mostly just have some brief notes to myself.
 
-- Be consistent.
-- Fill in all of the cells.
-- Make it a rectangle.
-- Create a data dictionary.
-- Make it a tidy data set.
-- No calculations in the raw data files.
-- Make backups.
-- Name files meaningfully.
-- Use Excel features to avoid data entry mistakes.
-- Things not to do.
+- [Be consistent](pages/consistency.html).
+- [Write dates as `YYYY-MM-DD`](pages/dates.html).
+- [Fill in all of the cells](pages/no_empty_cells.html).
+- [Make it a rectangle](pages/layout.html).
+- [Put just one thing in a cell](pages/one_thing_per_cell.html).
+- [Create a data dictionary](pages/dictionary.html).
+- [Make it a tidy data set](pages/tidy.html).
+- [No calculations in the raw data files](pages/no_calculations.html).
+- [Don't use font color or highlighting as data](pages/no_highlighting.html).
+- [Choose good names for things](pages/names.html).
+- [Make backups](pages/backups.html).
+- [Use Excel features to avoid data entry mistakes](pages/validation.html).
+- [Other things to avoid](pages/avoid.html).
 
 - [Other resources](pages/resources.html)
 
