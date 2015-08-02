@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Things to avoid
+title: Other things to avoid
 description: "Data organization: Things to avoid"
 ---
 
@@ -29,4 +29,4 @@ Other things to avoid, not previously mentioned?
 
 ---
 
-Next up: [Save the data in a non-proprietary format](csv_files.html).
+Next up: [Other resources](resources.html)

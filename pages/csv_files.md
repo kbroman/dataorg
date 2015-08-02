@@ -19,4 +19,4 @@ To save an Excel file as a comma-delimited file:
 
 ---
 
-Next up: [Other resources](resources.html)
+Next up: [Other things to avoid](avoid.html).

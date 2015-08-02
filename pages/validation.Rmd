@@ -10,4 +10,4 @@ to control the type of data or the values that users can enter into a cell.
 
 ---
 
-Next up: [Other things to avoid](avoid.html).
+Next up: [Save the data in a non-proprietary format](csv_files.html).

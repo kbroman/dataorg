@@ -46,8 +46,8 @@ these mostly just have some brief notes to myself.
 - [Choose good names for things](pages/names.html).
 - [Make backups](pages/backups.html).
 - [Use data validation to avoid data entry mistakes](pages/validation.html).
-- [Other things to avoid](pages/avoid.html).
 - [Save the data in a non-proprietary format](pages/csv_files.html).
+- [Other things to avoid](pages/avoid.html).
 
 - [Other resources](pages/resources.html)
 
