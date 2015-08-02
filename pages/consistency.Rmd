@@ -19,7 +19,9 @@ The first rule of data organization is *be consistent*.
     values. [R](http://www.r-project.org) users prefer `NA`. You could
     also use a hyphen (`-`). But stick with a single value throughout
     your data. Definitely don't use a numeric value like `-999` or
-    `999`; it's easy to miss that it's intended to be missing.
+    `999`; it's easy to miss that it's intended to be missing. Also,
+    don't insert a note in place of the data, explaining why it's
+    missing. Rather, make a separate column with such notes.
 
 - **Use consistent variable names.** If in one file (say the first
     batch of subjects), you have a variable called `Glucose_10wk`,
@@ -42,6 +44,12 @@ The first rule of data organization is *be consistent*.
     `YYYY-MM-DD`, like `2015-08-01`. If sometimes you write `8/1/2015`
     and sometimes `8-1-2015`, you're asking for trouble. (More on dates
     [next](dates.html).)
+
+- **Use consistent phrases in your notes.**
+    If you have a separate column of notes (for example, "`dead`" or
+    "`lo off curve`"), be consistent in what you write. Don't
+    sometimes write "`dead`" and sometimes "`Dead`", or sometimes
+    "`lo off curve`" and sometimes "`off curve lo`".
 
 ---
 
