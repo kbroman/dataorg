@@ -16,7 +16,8 @@ Here's an example in which a cell with a suspicious entry is highlighted.
 ![plot of chunk highlight_outlier](Figs/no_highlighting-highlight_outlier-1.svg) 
 
 It would be better to include an additional column that indicates
-the outliers.
+the outliers. The highlighting is nice visually, but it's hard to grab
+that information for use in the later analysis.
 
 ![plot of chunk outlier_column](Figs/no_highlighting-outlier_column-1.svg) 
 
