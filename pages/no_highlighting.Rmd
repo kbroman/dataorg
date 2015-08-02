@@ -33,11 +33,12 @@ excel_fig(mat, hilitcells=hilitcells)
 ```
 
 It would be better to include an additional column that indicates
-the outliers.
+the outliers. The highlighting is nice visually, but it's hard to grab
+that information for use in the later analysis.
 
 ```{r outlier_column, fig.width=5/4*5}
 mat$outlier <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
-excel_fig(mat, hilitcells=hilitcells)
+excel_fig(mat)
 ```
 
 Here's an example with males highlighted in blue and females in
