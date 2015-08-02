@@ -18,7 +18,8 @@ The first rule of data organization is *be consistent*.
     truly missing values and unintentionally missing
     values. [R](http://www.r-project.org) users prefer `NA`. You could
     also use a hyphen (`-`). But stick with a single value throughout
-    your data.
+    your data. Definitely don't use a numeric value like `-999` or
+    `999`; it's easy to miss that it's intended to be missing.
 
 - **Use consistent variable names.** If in one file (say the first
     batch of subjects), you have a variable called `Glucose_10wk`,
