@@ -8,4 +8,4 @@ Other things to avoid, not previously mentioned?
 
 ---
 
-Next up: [Other resources](resources.html)
+Next up: [Save the data in a non-proprietary format](csv_files.html).
