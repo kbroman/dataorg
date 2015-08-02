@@ -7,7 +7,7 @@ description: "Data organization: Be consistent"
 The first rule of data organization is *be consistent*.
 
 - **Use consistent codes for categorical variables.** For a
-    categorical variable like *sex*, using a single common value for males
+    categorical variable like *sex*, use a single common value for males
     (e.g. `male`) and a single common value for females
     (e.g. `female`). Don't sometimes write `M`, sometimes `male` and
     sometimes `Male`. Pick one and stick to it.
