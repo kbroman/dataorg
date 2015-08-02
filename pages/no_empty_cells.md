@@ -38,7 +38,7 @@ computer of that.
 
 You could fill in some of those cells, to make it more clear, but even
 better would be to make a "tidy" version of the data
-([more on is meant by "tidy" later](tidy.html)), as follows:
+([more on what is meant by "tidy" later](tidy.html)), as follows:
 
 ![plot of chunk more_skipping_cells_fixed](Figs/no_empty_cells-more_skipping_cells_fixed-1.svg) 
 
