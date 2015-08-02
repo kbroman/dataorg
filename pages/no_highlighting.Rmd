@@ -5,7 +5,7 @@ description: "Data organization: Don't use font color or highlighting as data."
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=7, fig.height=2.5,
+knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
                       fig.path="Figs/no_highlighting-",
                       dev="svg", echo=FALSE)
 library(broman)
@@ -16,11 +16,35 @@ data, or rows that should be ignored. Add another column
 with an indicator variable (for example, `"trusted"`, with values
 `TRUE` or `FALSE`).
 
+Here's an example in which a cell with a suspicious entry is highlighted.
+
+```{r highlight_outlier}
+mat <- data.frame(id=101:107,
+                  date=c("2015-06-14", "", "2015-06-18", "", "", "2015-06-20", ""),
+                  glucose=myround(c(149.3, 95.3, 97.5, 1.08, 108.0, 149.0, 169.4), 1),
+                  stringsAsFactors=FALSE)
+mat$date[2] <- mat$date[1]
+mat$date[4:5] <- mat$date[3]
+mat$date[7] <- mat$date[6]
+
+hilitcells <- "C5"
+
+excel_fig(mat, hilitcells=hilitcells)
+```
+
+It would be better to include an additional column that indicates
+the outliers.
+
+```{r outlier_column, fig.width=5/4*5}
+mat$outlier <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
+excel_fig(mat, hilitcells=hilitcells)
+```
+
 Here's an example with males highlighted in blue and females in
 pink. Rather than use highlighting to indicate sex, it's better to
 include a `sex` column, with values `Male` or `Female`.
 
-```{r sex_highlighted}
+```{r highlight_sex}
 mat <- data.frame(id=101:107,
                   date=c("2015-06-14", "", "2015-06-18", "", "", "2015-06-20", ""),
                   glucose=myround(c(149.3, 95.3, 97.5, 117.0, 108.0, 149.0, 169.4), 1),

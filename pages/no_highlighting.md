@@ -11,11 +11,20 @@ data, or rows that should be ignored. Add another column
 with an indicator variable (for example, `"trusted"`, with values
 `TRUE` or `FALSE`).
 
+Here's an example in which a cell with a suspicious entry is highlighted.
+
+![plot of chunk highlight_outlier](Figs/no_highlighting-highlight_outlier-1.svg) 
+
+It would be better to include an additional column that indicates
+the outliers.
+
+![plot of chunk outlier_column](Figs/no_highlighting-outlier_column-1.svg) 
+
 Here's an example with males highlighted in blue and females in
 pink. Rather than use highlighting to indicate sex, it's better to
 include a `sex` column, with values `Male` or `Female`.
 
-![plot of chunk sex_highlighted](Figs/no_highlighting-sex_highlighted-1.svg) 
+![plot of chunk highlight_sex](Figs/no_highlighting-highlight_sex-1.svg) 
 
 ---
 
