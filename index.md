@@ -47,6 +47,7 @@ these mostly just have some brief notes to myself.
 - [Make backups](pages/backups.html).
 - [Use data validation to avoid data entry mistakes](pages/validation.html).
 - [Other things to avoid](pages/avoid.html).
+- Save the data in a non-proprietary format.
 
 - [Other resources](pages/resources.html)
 
