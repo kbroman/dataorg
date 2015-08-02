@@ -5,7 +5,7 @@ description: "Data organization: No empty cells"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=7, fig.height=2.5,
+knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
                       fig.path="Figs/no_empty_cells-",
                       dev="svg", echo=FALSE)
 library(broman)
