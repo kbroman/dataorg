@@ -19,6 +19,13 @@ Other things to avoid, not previously mentioned?
   top row (which contain the column names) and the first column (which
   often contain individual identifiers) remain shown.
 
+- The [Data Carpentry](http://datacarpentry.org/)
+  [lesson on using spreadsheets](https://github.com/datacarpentry/excel-ecology)
+  points to a common mistake of
+  [not filling in zeroes](https://github.com/datacarpentry/excel-ecology/blob/gh-pages/02-common-mistakes.md).
+  That one might enter only the non-zero values and leave the
+  cells-that-would-be-zero blank. *Don't do that!* Zeros are data, and
+  you'll need them.
 
 ---
 
