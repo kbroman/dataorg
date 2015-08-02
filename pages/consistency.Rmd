@@ -53,6 +53,11 @@ The first rule of data organization is *be consistent*.
     sometimes "`Dead`", or sometimes "`lo off curve`" and sometimes
     "`off curve lo`".
 
+- **Be careful about extra spaces within cells.** A blank cell is
+    different then a cell that contains a single space. And "`male`"
+    is different from "` male `" (that is, with spaces at the
+    beginning an end. These can be a headache later on.
+
 ---
 
 Next up: [Write dates as `YYYY-MM-DD`](dates.html).
