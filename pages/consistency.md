@@ -9,7 +9,7 @@ The first rule of data organization is *be consistent*.
 - **Use consistent codes for categorical variables.** For a
     categorical variable like *sex*, use a single common value for
     males (e.g. "`male`") and a single common value for females
-    (e.g. "`female`"). Don't sometimes write "`M`", sometimes "`male`"
+    (e.g. "`female`"). Don't sometimes write "`M`", sometimes "`male`",
     and sometimes "`Male`". Pick one and stick to it.
 
 - **Use a single fixed code for any missing values.** I prefer to have
@@ -17,7 +17,7 @@ The first rule of data organization is *be consistent*.
     [here](no_empty_cells.html)), so that one can distinguish between
     truly missing values and unintentionally missing
     values. [R](http://www.r-project.org) users prefer "`NA`". You
-    could also use a hyphen `-`. But stick with a single value
+    could also use a hyphen. But stick with a single value
     throughout your data. Definitely don't use a numeric value like
     `-999` or `999`; it's easy to miss that it's intended to be
     missing. Also, don't insert a note in place of the data,
