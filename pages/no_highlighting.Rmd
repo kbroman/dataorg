@@ -4,12 +4,37 @@ title: Don't use font color or highlighting as data
 description: "Data organization: Don't use font color or highlighting as data."
 ---
 
+```{r knitr_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=7, fig.height=2.5,
+                      fig.path="Figs/no_highlighting-",
+                      dev="svg", echo=FALSE)
+library(broman)
+```
+
 You might be tempted to highlight particular cells with suspicious
 data, or rows that should be ignored. Add another column
 with an indicator variable (for example, `"trusted"`, with values
 `TRUE` or `FALSE`).
 
-- an illustration would be good.
+Here's an example with males highlighted in blue and females in
+pink. Rather than use highlighting to indicate sex, it's better to
+include a `sex` column, with values `Male` or `Female`.
+
+```{r sex_highlighted}
+mat <- data.frame(id=101:107,
+                  date=c("2015-06-14", "", "2015-06-18", "", "", "2015-06-20", ""),
+                  glucose=myround(c(149.3, 95.3, 97.5, 117.0, 108.0, 149.0, 169.4), 1),
+                  stringsAsFactors=FALSE)
+mat$date[2] <- mat$date[1]
+mat$date[4:5] <- mat$date[3]
+mat$date[7] <- mat$date[6]
+
+hilitcells <- c(paste0(rep(LETTERS[1:3], each=3), 1+c(2,3,6)),
+                paste0(rep(LETTERS[1:3], each=4), 1+c(1,4,5,7)))
+hilitcolor <- c(rep("#F0DCDB", 3*3), rep("#DDE6F1", 4*3))
+
+excel_fig(mat, hilitcells=hilitcells, hilitcolor=hilitcolor)
+```
 
 ---
 
