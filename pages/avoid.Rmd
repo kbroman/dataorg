@@ -9,7 +9,7 @@ Other things to avoid, not previously mentioned?
 - I once had a file with gene expression microarry data where the gene
   identifiers were long integers. It had gone through Excel at some
   point, and the identifier `1000000` had been changed to `1e6`, which
-  of course didn't match the other file with gene annotations.
+  of course didn't match what is the file with gene annotations.
 
 - I can't stand the "Split" window in Excel (from the menu bar, Window
   → Split). A lot of my collaborators seem to use it, but it drives me
