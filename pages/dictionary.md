@@ -11,6 +11,10 @@ Have a separate file that explains what all of the variables are.
 - Units
 - Minimum and maximum values, perhaps
 
+This is part of the *metadata* that you'll want to prepare:
+information *about* the data. You'll also want a `ReadMe` file that
+includes an overview of the project and data.
+
 ---
 
 Next up: [Make it a tidy data set](tidy.html).
