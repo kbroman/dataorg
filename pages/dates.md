@@ -28,12 +28,12 @@ Excel also has a tendency to turn other things into dates:
 
 [![second oct-4 tweet](../assets/pics/oct4_tweet_2.png)](https://twitter.com/rdpeng/status/622067435022123008)
 
-Personally, I'd be inclined to convert columns in an Excel worksheet
-that are going to contain dates into a plain text format:
+Personally, I'd be inclined to use a plain text format for columns in an Excel worksheet
+that are going to contain dates, so that it doesn't do anything to them:
 
 - Select the column
 - In the menu bar, select Format → Cells
-- Then choose "Text" on the left
+- Choose "Text" on the left
 
 But really what I wanted to emphasize here: be consistent in the way
 in which you write dates. And really, always use the `YYYY-MM-DD`
