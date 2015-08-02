@@ -7,7 +7,7 @@ description: "Data organization: Don't use font color or highlighting as data."
 
 
 You might be tempted to highlight particular cells with suspicious
-data, or rows that should be ignored. Add another column
+data, or rows that should be ignored. Instead, add another column
 with an indicator variable (for example, `"trusted"`, with values
 `TRUE` or `FALSE`).
 
