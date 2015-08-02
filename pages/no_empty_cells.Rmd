@@ -12,8 +12,16 @@ library(broman)
 ```
 
 Fill in all cells. Use some common code for missing data.
-Point to the example of putting a date in a column only every so
-often. (need an illustration for this)
+Not everyone agrees with me (for example,
+[White et al. (2013)](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898)
+state a preference for leaving cells blank), but I'd prefer to have
+"`NA`" or even a hyphen in the cells with missing data, to make sure
+it's clear that the data are known to be missing rather than
+unintentially left blank.
+
+I also often see cells left blank when a single value is meant to be
+repeated multiple times. For example, one might put the date in only a
+few cells, like this:
 
 ```{r skipping_cells}
 mat <- data.frame(id=101:107,
@@ -23,7 +31,10 @@ mat <- data.frame(id=101:107,
 excel_fig(mat)
 ```
 
-This is better:
+**Don't do that!** If the rows were to be sorted at some point, that
+date column would be completely mangled.
+
+It's much better to fill them all in, like this:
 
 ```{r skipping_cells_fixed}
 mat$date[2] <- mat$date[1]
@@ -32,6 +43,47 @@ mat$date[7] <- mat$date[6]
 excel_fig(mat)
 ```
 
+I also see this sort of thing for information about different
+treatments. For example, I recently saw a file like the following:
+
+```{r more_skipping_cells, fig.width=8, fig.height=1.5}
+mat2 <- data.frame(c("", "strain", "A", "B"),
+                   c("1 min", "normal", "147", "246"),
+                   c("", "", "139", "240"),
+                   c("", "mutant", "166", "178"),
+                   c("", "", "179", "172"),
+                   c("5 min", "normal", "334", "514"),
+                   c("", "", "354", "611"),
+                   c("", "mutant", "451", "412"),
+                   c("", "", "474", "447"),
+                    stringsAsFactors=FALSE)
+
+excel_fig(mat2, col_names=FALSE)
+```
+
+We'll [talk more about layout next](layout.html), but while it's sort
+of clear, to a human, what's intended above, it's hard to convince a
+computer of that.
+
+You could fill in some of those cells, to make it more clear, but even
+better would be to make a "tidy" version of the data
+([more on is meant by "tidy" later](tidy.html)), as follows:
+
+```{r more_skipping_cells_fixed, fig.height=4, fig.width=5/4*6}
+mat2b <- data.frame(strain=rep(c("A", "A", "B", "B"), 4),
+                    genotype=rep(rep(c("normal", "mutant"), each=4),2),
+                    min=rep(c(1, 5), each=8),
+                    replicate=rep(c(1,2),8),
+                    response=c("147", "139", "246", "240",
+                               "166", "179", "178", "172",
+                               "334", "354", "514", "611",
+                               "451", "474", "412", "447"),
+                    stringsAsFactors=FALSE)
+
+excel_fig(mat2b)
+```
+
+**No empty cells!**
 
 ---
 
