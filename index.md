@@ -8,8 +8,8 @@ description: A tutorial on organizing data in spreadsheets
 My collaborators sometimes ask me, "In what form would you like the data?"
 My response is always, "In its current form!" If the data need to be
 reformatted, it's much better for me to write a script than
-for them to do a bunch of cut-and-paste. I'm a strong proponent of the idea
-that data analysts should be able to handle any data files they might
+for them to do a bunch of cut-and-paste. I'm a strong proponent of
+data analysts being able to handle any data files they might
 receive.
 
 But in many cases, I have to spend **a lot** of time writing scripts
@@ -21,7 +21,7 @@ Most of my collaborators enter and store their data in spreadsheets,
 and mostly Microsoft Excel. Before starting to enter data into a
 spreadsheet, it's good to spend some time thinking about the
 layout. The way that you organize the data in spreadsheets can have a
-big impact on the ease of downstream analyses.
+big impact on your data analyst's quality of life.
 
 This is a tutorial on that topic: *how to organize data in
 spreadsheets*. For complex, high-dimensional data, it may be better to
@@ -47,6 +47,7 @@ these mostly just have some brief notes to myself.
 - [Make backups](pages/backups.html).
 - [Use data validation to avoid data entry mistakes](pages/validation.html).
 - [Other things to avoid](pages/avoid.html).
+- Save the data in a non-proprietary format.
 
 - [Other resources](pages/resources.html)
 
