@@ -11,4 +11,4 @@ description: "Data organization: Use a rectangular layout"
 
 ---
 
-Next up: [Put just one thing in a cell](one_thing_per_cell.html).
+Next up: [Create a data dictionary](dictionary.html).

@@ -14,4 +14,4 @@ Don't merge cells to make things "pretty"
 
 ---
 
-Next up: [Create a data dictionary](dictionary.html).
+Next up: [Make it a rectangle](layout.html).

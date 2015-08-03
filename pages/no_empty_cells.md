@@ -32,7 +32,7 @@ treatments. For example, I recently saw a file like the following:
 
 ![plot of chunk more_skipping_cells](Figs/no_empty_cells-more_skipping_cells-1.svg) 
 
-We'll [talk more about layout next](layout.html), but while it's sort
+We'll [talk more about layout shortly](layout.html), but while it's sort
 of clear, to a human, what's intended above, the computer will have a
 hard time with it.
 
@@ -46,4 +46,4 @@ better would be to make a "tidy" version of the data
 
 ---
 
-Next up: [Make it a rectangle](layout.html).
+Next up: [Put just one thing in a cell](one_thing_per_cell.html).
