@@ -4,10 +4,74 @@ title: Make it a rectangle
 description: "Data organization: Use a rectangular layout"
 ---
 
-- subjects as rows, variables as columns
-- not all data can be fit in a rectangle, but if it can't be, maybe a
-  spreadsheet is not the best way to store it
-- Use just one row of column names.
+```{r knitr_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
+                      fig.path="Figs/no_empty_cells-",
+                      dev="svg", echo=FALSE)
+library(broman)
+```
+
+
+The best layout for your data within in a spreadsheet is as a big
+rectangle with rows corresponding to the subjects and columns
+corresponding to variables. The first row should contain variable
+names. (*Please don't use more than one row for the variable names.*)
+Here's an example:
+
+```{r example_rectangle, fig.height=2}
+set.seed(20150803)
+mat <- data.frame(id=101:105,
+                  sex=sample(c("Male", "Female"), 5, replace=TRUE),
+                  glucose=myround(runif(5, 70, 150), 1),
+                  insulin=myround(runif(5, 0.5, 1.5), 2),
+                  triglyc=myround(runif(5, 70, 300), 1),
+                  stringsAsFactors=FALSE)
+
+excel_fig(mat)
+```
+
+Some data sets won't fit nicely into a rectangle, but they'll usually
+fit into a set of rectangles, in which you can make a set of Excel files,
+each with a rectangle of data. Some data don't even fit into a set of
+rectangles, but then maybe spreadsheets are not the best format for
+them, as spreadsheets seem inherently rectangular.
+
+The data files that I receive are not very often in rectangular
+form. More often, there seem to be bits of data sprinkled about.
+Like this:
+
+```{r bad_example_1, fig.height=2.8}
+mat2 <- t(mat)
+
+mat2 <- cbind(rownames(mat2), mat2)
+mat2 <- rbind(rep("", 6),
+              mat2[1:2,],
+              rep("", 6),
+              mat2[c(1,3),],
+              rep("", 6),
+              mat2[c(1,4),])
+mat2[c(2,5,8),1] <- ""
+
+excel_fig(mat2, col_names=FALSE)
+```
+
+Or maybe like this:
+
+```{r bad_example_2, fig.height=2.8, fig.width=6}
+mat3 <- rbind(c("1MIN", rep("", 6)),
+              c("", "", "Normal", "", "", "Mutant", ""),
+              c("B6", 146.6, 138.6, 155.6, 166.0, 179.3, 186.9),
+              c("BTBR", 245.7, 240.0, 243.1, 177.8, 171.6, 188.1),
+              rep("", 7),
+              c("5MIN", rep("", 6)),
+              c("", "", "Normal", "", "", "Mutant", ""),
+              c("B6", 333.6, 353.6, 408.8, 450.6, 474.4, 423.8),
+              c("BTBR", 514.4, 610.6, 597.9, 412.1, 447.4, 446.5))
+
+excel_fig(mat3, col_names=FALSE)
+```
+
+
 
 ---
 
