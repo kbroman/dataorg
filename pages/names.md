@@ -13,6 +13,7 @@ description: "Data organization: naming things"
   a variable name). "`glucose`" is different from "`glucose `" (with
   an extra space a the end). Extraneous spaces can cause headaches
   later.
+- Avoid special characters.
 
 ---
 
