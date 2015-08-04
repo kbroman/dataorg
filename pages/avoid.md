@@ -31,4 +31,4 @@ Other things to avoid, not previously mentioned or deserving further emphasis:
 
 Next up: [Other resources](resources.html)
 
-(Previous: [Save the data in a non-proprietary format](csv_files.html).)
+(Previous: [Save the data in a plain text format](csv_files.html).)

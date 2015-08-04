@@ -36,6 +36,6 @@ mistakes, it could be worth it.
 
 ---
 
-Next up: [Save the data in a non-proprietary format](csv_files.html).
+Next up: [Save the data in a plain text format](csv_files.html).
 
 (Previous: [Make backups](backups.html).)
