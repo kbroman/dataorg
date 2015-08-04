@@ -30,9 +30,10 @@ perfectly fine. But data in spreadsheets can be pretty and easy to
 work with, or they can be a sloppy mess requiring serious
 downstream reorganization efforts. We want to avoid the latter.
 
-I'm just getting started with this.
-Eventually, I'll cover topics like the following, but at the moment
-these mostly just have some brief notes to myself.
+I don't think these ideas comes naturally to anyone. It's taken me 20
+years to come to this understanding. So if you're not happy with the
+structure of your current data files, don't despair! But try to
+organize your next dataset in a way that will make analyses easier.
 
 - [Be consistent](pages/consistency.html).
 - [Write dates as `YYYY-MM-DD`](pages/dates.html).
