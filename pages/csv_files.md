@@ -11,7 +11,92 @@ tab delimiters.  I generally use comma-delimited (CSV) files.
 
 So a spreadsheet like this:
 
-![plot of chunk example_rectangle](Figs/csv_files-example_rectangle-1.svg) 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="604px" height="144px" viewBox="0 0 604 144" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect x="502" y="122" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >215.7</text>
+    <rect x="402" y="122" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >0.73</text>
+    <rect x="302" y="122" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >105.2</text>
+    <rect x="202" y="122" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >Male</text>
+    <rect x="102" y="122" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >105</text>
+    <rect x="2" y="122" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="132" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >6</text>
+    <rect x="502" y="102" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >142.4</text>
+    <rect x="402" y="102" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >1.16</text>
+    <rect x="302" y="102" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >83.1</text>
+    <rect x="202" y="102" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >Male</text>
+    <rect x="102" y="102" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >104</text>
+    <rect x="2" y="102" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="112" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >5</text>
+    <rect x="502" y="82" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >297.6</text>
+    <rect x="402" y="82" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >1.23</text>
+    <rect x="302" y="82" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >124.8</text>
+    <rect x="202" y="82" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >Male</text>
+    <rect x="102" y="82" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >103</text>
+    <rect x="2" y="82" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >4</text>
+    <rect x="502" y="62" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >243.6</text>
+    <rect x="402" y="62" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >1.18</text>
+    <rect x="302" y="62" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >120.0</text>
+    <rect x="202" y="62" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >Female</text>
+    <rect x="102" y="62" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >102</text>
+    <rect x="2" y="62" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="72" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >3</text>
+    <rect x="502" y="42" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >273.4</text>
+    <rect x="402" y="42" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >0.60</text>
+    <rect x="302" y="42" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >134.1</text>
+    <rect x="202" y="42" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >Male</text>
+    <rect x="102" y="42" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >101</text>
+    <rect x="2" y="42" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="52" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >2</text>
+    <rect x="502" y="22" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="552" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >triglyc</text>
+    <rect x="402" y="22" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="452" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >insulin</text>
+    <rect x="302" y="22" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="352" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >glucose</text>
+    <rect x="202" y="22" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="252" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >sex</text>
+    <rect x="102" y="22" width="100" height="20" fill="white" stroke="#CECECE" stroke-width="2" />
+    <text x="152" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >id</text>
+    <rect x="2" y="22" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="52" y="32" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >1</text>
+    <rect x="502" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="552" y="12" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >E</text>
+    <rect x="402" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="452" y="12" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >D</text>
+    <rect x="302" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="352" y="12" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >C</text>
+    <rect x="202" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="252" y="12" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >B</text>
+    <rect x="102" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+    <text x="152" y="12" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="14px" >A</text>
+    <rect x="2" y="2" width="100" height="20" fill="#E9E9E9" stroke="#969696" stroke-width="2" />
+</svg>
 
 Would become a plain text file like this:
 
@@ -59,3 +144,8 @@ bar. But you can't get that from Excel.
 Next up: [Other things to avoid](avoid.html).
 
 (Previous: [Use data validation to avoid data entry mistakes](validation.html).)
+
+<style>
+svg { font-family: sans-serif; }
+svg text { font-family: sans-serif; }
+</style>

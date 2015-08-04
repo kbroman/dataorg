@@ -5,9 +5,7 @@ description: "Data organization: Use plain text files"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/csv_files-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE)
 library(broman)
 ```
 
@@ -16,7 +14,7 @@ tab delimiters.  I generally use comma-delimited (CSV) files.
 
 So a spreadsheet like this:
 
-```{r example_rectangle, fig.height=2}
+```{r example_rectangle, results="asis"}
 set.seed(20150803)
 mat <- data.frame(id=101:105,
                   sex=sample(c("Male", "Female"), 5, replace=TRUE),
@@ -25,7 +23,7 @@ mat <- data.frame(id=101:105,
                   triglyc=myround(runif(5, 70, 300), 1),
                   stringsAsFactors=FALSE)
 
-excel_fig(mat)
+excel_fig(mat, direct2svg=TRUE)
 ```
 
 Would become a plain text file like this:
@@ -74,3 +72,8 @@ bar. But you can't get that from Excel.
 Next up: [Other things to avoid](avoid.html).
 
 (Previous: [Use data validation to avoid data entry mistakes](validation.html).)
+
+<style>
+svg { font-family: sans-serif; }
+svg text { font-family: sans-serif; }
+</style>
