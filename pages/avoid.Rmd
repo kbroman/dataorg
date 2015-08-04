@@ -4,7 +4,7 @@ title: Other things to avoid
 description: "Data organization: Things to avoid"
 ---
 
-Other things to avoid, not previously mentioned?
+Other things to avoid, not previously mentioned or deserving further emphasis:
 
 - I once had a file with gene expression microarry data where the gene
   identifiers were long integers. It had gone through Excel at some
