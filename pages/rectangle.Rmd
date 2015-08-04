@@ -176,10 +176,14 @@ mat5gtt[1,2] <- "GTT time"
 excel_fig(mat5gtt, col_names=FALSE)
 ```
 
-This is what's called "tidy" data (see [the paper]() by
-[Hadley Wickham]()): **explain tidy data here**.
+This is an example of what's called "tidy" data (see [the paper](http://www.jstatsoft.org/v59/i10/paper) by
+[Hadley Wickham](http://had.co.nz/)): each row is an experimental
+unit, which is usually just a subject but in this case is a single
+assay measurement on a subject. Reorganizing the data into a "tidy"
+format can simplify later analysis. But the rectangular aspect is the
+most important part.
 
-Another issue I see is the use of two rows of header names, off with
+Another issue I see is the use of two rows of header names, often with
 blank cells or merged cells, like this:
 
 ```{r bad_example_5, fig.width=11, fig.height=2.5}

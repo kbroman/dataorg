@@ -71,10 +71,14 @@ And then another rectangle with the GTT results, like this:
 
 ![plot of chunk bad_example_4_gtt](Figs/no_empty_cells-bad_example_4_gtt-1.svg) 
 
-This is what's called "tidy" data (see [the paper]() by
-[Hadley Wickham]()): **explain tidy data here**.
+This is an example of what's called "tidy" data (see [the paper](http://www.jstatsoft.org/v59/i10/paper) by
+[Hadley Wickham](http://had.co.nz/)): each row is an experimental
+unit, which is usually just a subject but in this case is a single
+assay measurement on a subject. Reorganizing the data into a "tidy"
+format can simplify later analysis. But the rectangular aspect is the
+most important part.
 
-Another issue I see is the use of two rows of header names, off with
+Another issue I see is the use of two rows of header names, often with
 blank cells or merged cells, like this:
 
 ![plot of chunk bad_example_5](Figs/no_empty_cells-bad_example_5-1.svg) 
