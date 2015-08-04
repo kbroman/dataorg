@@ -33,7 +33,7 @@ downstream reorganization efforts. We want to avoid the latter.
 I don't think these ideas comes naturally to anyone. It's taken me 20
 years to come to this understanding. So if you're not happy with the
 structure of your current data files, don't despair! But try to
-organize your next dataset in a way that will make analyses easier.
+organize your next data set in a way that will make analyses easier.
 
 - [Be consistent](pages/consistency.html).
 - [Write dates as `YYYY-MM-DD`](pages/dates.html).
