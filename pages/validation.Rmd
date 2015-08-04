@@ -31,7 +31,7 @@ names!) get mangled by Excel. I mentioned this before in the
 - In the menu bar, select Format → Cells
 - Choose "Text" on the left
 
-All this may seem cumbersome, but if helps you to avoid data entry
+All this may seem cumbersome, but if it helps you to avoid data entry
 mistakes, it could be worth it.
 
 ---
