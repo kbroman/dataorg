@@ -71,6 +71,9 @@ And then another rectangle with the GTT results, like this:
 
 ![plot of chunk bad_example_4_gtt](Figs/no_empty_cells-bad_example_4_gtt-1.svg) 
 
+This is what's called "tidy" data (see [the paper]() by
+[Hadley Wickham]()): **explain tidy data here**.
+
 Another issue I see is the use of two rows of header names, off with
 blank cells or merged cells, like this:
 
@@ -84,7 +87,7 @@ this:
 
 
 Even better would be to make it a "tidy" data set
-([more on this later](tidy.html)), with each row being a subject on a
+with each row being a subject on a
 particular day, like this:
 
 ![plot of chunk bad_example_5_tidy](Figs/no_empty_cells-bad_example_5_tidy-1.svg) 

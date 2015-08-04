@@ -38,9 +38,8 @@ these mostly just have some brief notes to myself.
 - [Write dates as `YYYY-MM-DD`](pages/dates.html).
 - [Fill in all of the cells](pages/no_empty_cells.html).
 - [Put just one thing in a cell](pages/one_thing_per_cell.html).
-- [Make it a rectangle](pages/layout.html).
+- [Make it a rectangle](pages/rectangle.html).
 - [Create a data dictionary](pages/dictionary.html).
-- [Make it a tidy data set](pages/tidy.html).
 - [No calculations in the raw data files](pages/no_calculations.html).
 - [Don't use font color or highlighting as data](pages/no_highlighting.html).
 - [Choose good names for things](pages/names.html).

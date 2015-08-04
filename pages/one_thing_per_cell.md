@@ -27,4 +27,4 @@ breaking the rule of [no empty cells](no_empty_cells.html).
 
 ---
 
-Next up: [Make it a rectangle](layout.html).
+Next up: [Make it a rectangle](rectangle.html).

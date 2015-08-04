@@ -17,4 +17,4 @@ includes an overview of the project and data.
 
 ---
 
-Next up: [Make it a tidy data set](tidy.html).
+Next up: [No calculations in the raw data files](no_calculations.html).

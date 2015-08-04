@@ -34,7 +34,7 @@ The first rule of data organization is *be consistent*.
 
 - **Use a common data layout in multiple files.** If your data are in
     multiple files, use the same layout in all files. (More on layout
-    [here](layout.html).)
+    [here](rectangle.html).)
 
 - **Use consistent file names.** Have some system for naming files. If
     one file is called "`Serum_batch1_2015-01-30.csv`", then don't

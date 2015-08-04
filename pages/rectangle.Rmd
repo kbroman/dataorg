@@ -176,6 +176,9 @@ mat5gtt[1,2] <- "GTT time"
 excel_fig(mat5gtt, col_names=FALSE)
 ```
 
+This is what's called "tidy" data (see [the paper]() by
+[Hadley Wickham]()): **explain tidy data here**.
+
 Another issue I see is the use of two rows of header names, off with
 blank cells or merged cells, like this:
 
@@ -207,7 +210,7 @@ excel_fig(mat6, col_names=FALSE)
 
 
 Even better would be to make it a "tidy" data set
-([more on this later](tidy.html)), with each row being a subject on a
+with each row being a subject on a
 particular day, like this:
 
 ```{r bad_example_5_tidy, fig.width=11*7/12, fig.height=2.5/8*17}

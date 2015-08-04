@@ -32,13 +32,14 @@ treatments. For example, I recently saw a file like the following:
 
 ![plot of chunk more_skipping_cells](Figs/no_empty_cells-more_skipping_cells-1.svg) 
 
-We'll [talk more about layout shortly](layout.html), but while it's sort
+We'll [talk more about layout shortly](rectangle.html), but while it's sort
 of clear, to a human, what's intended above, the computer will have a
 hard time with it.
 
 You could fill in some of those cells, to make it more clear, but even
 better would be to make a "tidy" version of the data
-([more on what is meant by "tidy" later](tidy.html)), as follows:
+([more on what is meant by "tidy" later](rectangle.html), as part of
+the discussion of layout), with each row being one replicate, as follows:
 
 ![plot of chunk more_skipping_cells_fixed](Figs/no_empty_cells-more_skipping_cells_fixed-1.svg) 
 
