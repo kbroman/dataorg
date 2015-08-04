@@ -71,7 +71,110 @@ mat3 <- rbind(c("1MIN", rep("", 6)),
 excel_fig(mat3, col_names=FALSE)
 ```
 
+In both of these cases, the data analyst has to study the layout, figure out
+what everything means, and then spend some time rearranging things.
 
+Another recent example: a separate worksheet for each subject, each in
+a complicated format like this:
+
+```{r bad_example_3, fig.height=3.5, fig.width=8}
+mat4 <- rbind(rep("", 7),
+              c("Date", "11/3/14", rep("", 5)),
+              c("Days on diet", "126", rep("", 5)),
+              c("Mouse #", "43", rep("", 5)),
+              c("sex", "f", rep("", 5)),
+              c("experiment", "", "values", "", "", "mean", "SD"),
+              c("control", "", 0.186, 0.191, 1.081, "", ""),
+              c("treatment A", "", 7.414, 1.468, 2.254, "", ""),
+              c("treatment B", "", 9.811, 9.259, 11.296, "", ""),
+              rep("", 7),
+              c("fold change", "", "values", "", "", "mean", "SD"),
+              c("treatment A", "", 7.414, 1.468, 2.254, "", ""),
+              c("treatment B", "", 9.811, 9.259, 11.296, "", ""))
+
+for(i in 7:9) {
+    # calc mean and SD
+    x <- as.numeric(mat4[i, 3:5])
+    mat4[i,6] <- round(mean(x), 2)
+    mat4[i,7] <- round(sd(x), 2)
+
+    if(i > 7) {
+      # fold change
+      y <- as.numeric(mat4[7, 3:5])
+      z <- x/mean(y)
+      mat4[i+4,3:5] <- round(z, 2)
+      mat4[i+4,6] <- round(mean(z), 2)
+      mat4[i+4,7] <- round(sd(z), 2)
+    }
+}
+excel_fig(mat4)
+```
+
+If all of the worksheets have exactly the same layout, then it's not
+too hard to pull out the relevant information and combine it into a
+rectangle (I'd write a [python](https://www.python.org) or
+[ruby](https://www.ruby-lang.org) script). But I prefer to not have
+means and SDs and fold change calculations cluttering things up, and
+it seems that even for data entry, it'd be easier to have all of the
+measurements on one worksheet.
+
+Sometimes it's hard to see how to reorganize things as a
+rectangle. Consider this example:
+
+```{r bad_example_4, fig.width=8, fig.height=5}
+mat5 <- rbind(c("", "GTT date", "GTT weight", "time", "glucose mg/dl", "insulin ng/ml"),
+              c("321", "2/9/15", "24.5",  0,  99.2, "lo off curve"),
+              c("", "", "",               5, 349.3, 0.205),
+              c("", "", "",              15, 286.1, 0.129),
+              c("", "", "",              30, 312.0, 0.175),
+              c("", "", "",              60,  99.9, 0.122),
+              c("", "", "",             120, 217.9, "lo off curve"),
+              c("322", "2/9/15", "18.9",  0, 185.8, 0.251),
+              c("", "", "",               5, 297.4, 2.228),
+              c("", "", "",              15, 439.0, 2.078),
+              c("", "", "",              30, 362.3, 0.775),
+              c("", "", "",              60, 232.7, 0.500),
+              c("", "", "",             120, 260.7, 0.523),
+              c("323", "2/9/15", "24.7",  0, 198.5, 0.151),
+              c("", "", "",               5, 530.6, "off curve lo"))
+
+excel_fig(mat5, col_names=FALSE)
+```
+
+Well, it's sort of a rectangle; we could just fill in the empty cells,
+like this:
+
+```{r bad_example_4_filled, fig.width=8, fig.height=5}
+mat5[1,1] <- "id"
+for(i in 1:3) {
+    mat5[3:7, i] <- mat5[2,i]
+    mat5[(3:7)+6, i] <- mat5[8,i]
+    mat5[15, i] <- mat5[14,i]
+}
+
+excel_fig(mat5, col_names=FALSE)
+```
+
+But it seems wrong to repeat the weights like that. It's better to
+make two separate tables, one with the weights, and one with these
+other measurements (which are for in vivo assay, the glucose tolerance
+test: give a mouse some glucose and measure serum glucose and insulin
+levels at different times afterwards).
+
+So you'd have one table with the weights, like this:
+
+```{r bad_example_4_weights, fig.width=6/5*4, fig.height=5/16*5}
+mat5wt <- mat5[c(1,2,8,14), 1:3]
+excel_fig(mat5wt, col_names=FALSE)
+```
+
+And then another rectangle with the GTT results, like this:
+
+```{r bad_example_4_gtt, fig.width=6, fig.height=5}
+mat5gtt <- mat5[,c(1, 4:6)]
+mat5gtt[1,2] <- "GTT time"
+excel_fig(mat5gtt, col_names=FALSE)
+```
 
 ---
 

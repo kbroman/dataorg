@@ -31,7 +31,45 @@ Or maybe like this:
 
 ![plot of chunk bad_example_2](Figs/no_empty_cells-bad_example_2-1.svg) 
 
+In both of these cases, the data analyst has to study the layout, figure out
+what everything means, and then spend some time rearranging things.
 
+Another recent example: a separate worksheet for each subject, each in
+a complicated format like this:
+
+![plot of chunk bad_example_3](Figs/no_empty_cells-bad_example_3-1.svg) 
+
+If all of the worksheets have exactly the same layout, then it's not
+too hard to pull out the relevant information and combine it into a
+rectangle (I'd write a [python](https://www.python.org) or
+[ruby](https://www.ruby-lang.org) script). But I prefer to not have
+means and SDs and fold change calculations cluttering things up, and
+it seems that even for data entry, it'd be easier to have all of the
+measurements on one worksheet.
+
+Sometimes it's hard to see how to reorganize things as a
+rectangle. Consider this example:
+
+![plot of chunk bad_example_4](Figs/no_empty_cells-bad_example_4-1.svg) 
+
+Well, it's sort of a rectangle; we could just fill in the empty cells,
+like this:
+
+![plot of chunk bad_example_4_filled](Figs/no_empty_cells-bad_example_4_filled-1.svg) 
+
+But it seems wrong to repeat the weights like that. It's better to
+make two separate tables, one with the weights, and one with these
+other measurements (which are for in vivo assay, the glucose tolerance
+test: give a mouse some glucose and measure serum glucose and insulin
+levels at different times afterwards).
+
+So you'd have one table with the weights, like this:
+
+![plot of chunk bad_example_4_weights](Figs/no_empty_cells-bad_example_4_weights-1.svg) 
+
+And then another rectangle with the GTT results, like this:
+
+![plot of chunk bad_example_4_gtt](Figs/no_empty_cells-bad_example_4_gtt-1.svg) 
 
 ---
 
