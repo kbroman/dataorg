@@ -13,7 +13,7 @@ library(broman)
 
 
 The best layout for your data within in a spreadsheet is as a big
-rectangle with rows corresponding to the subjects and columns
+rectangle with rows corresponding to subjects and columns
 corresponding to variables. The first row should contain variable
 names. (*Please don't use more than one row for the variable names.*)
 Here's an example:
@@ -112,8 +112,8 @@ excel_fig(mat4)
 
 If all of the worksheets have exactly the same layout, then it's not
 too hard to pull out the relevant information and combine it into a
-rectangle (I'd write a [python](https://www.python.org) or
-[ruby](https://www.ruby-lang.org) script). But I prefer to not have
+rectangle. (I'd write a [python](https://www.python.org) or
+[ruby](https://www.ruby-lang.org) script.) But I prefer to not have
 means and SDs and fold change calculations cluttering things up, and
 it seems that even for data entry, it'd be easier to have all of the
 measurements on one worksheet.
@@ -175,6 +175,53 @@ mat5gtt <- mat5[,c(1, 4:6)]
 mat5gtt[1,2] <- "GTT time"
 excel_fig(mat5gtt, col_names=FALSE)
 ```
+
+Another issue I see is the use of two rows of header names, off with
+blank cells or merged cells, like this:
+
+```{r bad_example_5, fig.width=11, fig.height=2.5}
+mat6 <- rbind(c("", "", "week 4", "", "", "week 6", "", "", "week 8", "", ""),
+              c("Mouse ID", "SEX", rep(c("date", "weight", "glucose"), 3)),
+              c("3005", "M", "3/30/2007",  19.3, 635.0, "4/11/2007",  31,   460.7, "4/27/2007",  39.6, 530.2),
+              c("3017", "M", "10/6/2006",  25.9, 202.4, "10/19/2006", 45.1, 384.7, "11/3/2006",  57.2, 458.7),
+              c("3434", "F", "11/22/2006", 26.6, 238.9, "12/6/2006",  45.9, 378.0, "12/22/2006", 56.2, 409.8),
+              c("3449", "M", "1/5/2007",   27.5, 121.0, "1/19/2007",  42.9, 191.3, "2/2/2007",   56.7, 182.5),
+              c("3499", "F", "1/5/2007",   19.8, 220.2, "1/19/2007",  36.6, 556.9, "2/2/2007",   43.6, 446.0))
+
+excel_fig(mat6, col_names=FALSE)
+```
+
+I'd prefer to have the week information within the variable name, like
+this:
+
+```{r bad_example_5_1colname, fig.width=11, fig.height=2.5/8*7}
+mat6 <- mat6[-1,]
+wk <- c(4, 6, 8)
+firstcol <- c(3,6,9)
+for(i in seq(along=firstcol))
+    mat6[1,firstcol[i]+0:2] <- paste0(mat6[1,firstcol[i]+0:2], "_", wk[i])
+
+excel_fig(mat6, col_names=FALSE)
+```
+
+
+
+Even better would be to make it a "tidy" data set
+([more on this later](tidy.html)), with each row being a subject on a
+particular day, like this:
+
+```{r bad_example_5_tidy, fig.width=11*7/12, fig.height=2.5/8*17}
+mat6b <- rbind(cbind(mat6[,1:2], week=rep(4,6), mat6[,3:5]),
+               cbind(mat6[-1,1:2], week=rep(6,5), mat6[-1,6:8]),
+               cbind(mat6[-1,1:2], week=rep(8,5), mat6[-1,9:11]))
+colnames(mat6b) <- c("mouse_id", "sex", "week", "date", "glucose", "weight")
+mat6b <- mat6b[-1,]
+mat6b <- mat6b[order(as.numeric(mat6b[,1]), mat6b[,3]),]
+
+excel_fig(mat6b)
+```
+
+**Make it a rectangle!**
 
 ---
 

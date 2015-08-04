@@ -8,7 +8,7 @@ description: "Data organization: Use a rectangular layout"
 
 
 The best layout for your data within in a spreadsheet is as a big
-rectangle with rows corresponding to the subjects and columns
+rectangle with rows corresponding to subjects and columns
 corresponding to variables. The first row should contain variable
 names. (*Please don't use more than one row for the variable names.*)
 Here's an example:
@@ -41,8 +41,8 @@ a complicated format like this:
 
 If all of the worksheets have exactly the same layout, then it's not
 too hard to pull out the relevant information and combine it into a
-rectangle (I'd write a [python](https://www.python.org) or
-[ruby](https://www.ruby-lang.org) script). But I prefer to not have
+rectangle. (I'd write a [python](https://www.python.org) or
+[ruby](https://www.ruby-lang.org) script.) But I prefer to not have
 means and SDs and fold change calculations cluttering things up, and
 it seems that even for data entry, it'd be easier to have all of the
 measurements on one worksheet.
@@ -70,6 +70,26 @@ So you'd have one table with the weights, like this:
 And then another rectangle with the GTT results, like this:
 
 ![plot of chunk bad_example_4_gtt](Figs/no_empty_cells-bad_example_4_gtt-1.svg) 
+
+Another issue I see is the use of two rows of header names, off with
+blank cells or merged cells, like this:
+
+![plot of chunk bad_example_5](Figs/no_empty_cells-bad_example_5-1.svg) 
+
+I'd prefer to have the week information within the variable name, like
+this:
+
+![plot of chunk bad_example_5_1colname](Figs/no_empty_cells-bad_example_5_1colname-1.svg) 
+
+
+
+Even better would be to make it a "tidy" data set
+([more on this later](tidy.html)), with each row being a subject on a
+particular day, like this:
+
+![plot of chunk bad_example_5_tidy](Figs/no_empty_cells-bad_example_5_tidy-1.svg) 
+
+**Make it a rectangle!**
 
 ---
 
