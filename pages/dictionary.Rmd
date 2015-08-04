@@ -6,7 +6,7 @@ description: "Data organization: create a data dictionary"
 
 ```{r knitr_options, include=FALSE}
 knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/no_empty_cells-",
+                      fig.path="Figs/dictionary-",
                       dev="svg", echo=FALSE)
 library(broman)
 ```

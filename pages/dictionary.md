@@ -25,7 +25,7 @@ includes an overview of the project and data.
 
 Here's an example data dictionary.
 
-![plot of chunk data_dict](Figs/no_empty_cells-data_dict-1.svg) 
+![plot of chunk data_dict](Figs/dictionary-data_dict-1.svg) 
 
 Note that this is a rectangular data set, like any other. The first
 column contains the variable names. The second column is more readable
