@@ -92,7 +92,8 @@ particular day, like this:
 
 ![plot of chunk bad_example_5_tidy](Figs/no_empty_cells-bad_example_5_tidy-1.svg) 
 
-**Make it a rectangle!**
+**Make it a rectangle!** (Or, if necessary, make it a set of
+  rectangles, but that doesn't have quite the same punch.)
 
 ---
 
