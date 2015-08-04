@@ -32,6 +32,11 @@ The first rule of data organization is *be consistent*.
     data analyst will have to work out that these are all really the
     same thing. (More on naming variables [here](names.html).)
 
+- **Use consistent subject IDs.** If sometimes it's "`153`" and
+    sometimes "`mouse153`" and sometimes "`mouse-153F`" and sometimes
+    `Mouse153`, there's going to be extra work to figure out who's
+    who.
+
 - **Use a common data layout in multiple files.** If your data are in
     multiple files, use the same layout in all files. (More on layout
     [here](rectangle.html).)
@@ -56,7 +61,7 @@ The first rule of data organization is *be consistent*.
 - **Be careful about extra spaces within cells.** A blank cell is
     different then a cell that contains a single space. And "`male`"
     is different from "` male `" (that is, with spaces at the
-    beginning an end). These can be a headache later on.
+    beginning and end). These can be a headache later on.
 
 ---
 
