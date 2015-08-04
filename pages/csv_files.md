@@ -4,8 +4,36 @@ title: Save the data in a non-proprietary format
 description: "Data organization: Use a non-proprietary file format"
 ---
 
-Keep a copy in a plain text format, with comma or tab delimited.
-I generally use comma-delimited (CSV) files.
+
+
+Keep a copy of your data files in a plain text format, with comma or
+tab delimiters.  I generally use comma-delimited (CSV) files.
+
+So a spreadsheet like this:
+
+![plot of chunk example_rectangle](Figs/csv_files-example_rectangle-1.svg) 
+
+Would become a plain text file like this:
+
+    id,sex,glucose,insulin,triglyc
+    101,Male,134.1,0.60,273.4
+    102,Female,120.0,1.18,243.6
+    103,Male,124.8,1.23,297.6
+    104,Male,83.1,1.16,142.4
+    105,Male,105.2,0.73,215.7
+
+It's not pretty to look at, but you can open the file in Excel and it
+will look pretty again. More importantly, this sort of non-proprietary file
+format does not and never will require any sort of special software.
+
+(And most of the time, the first thing I do with an Excel file is
+convert it into a set of CSV files, one per worksheet, because they're
+easier to handle in code.)
+
+If any of the cells in your data include commas, Excel will put
+double-quotes around the contents of each cell when it's saved in CSV
+format. That requires slightly more finesse to deal with, but it's
+generally not a concern.
 
 To save an Excel file as a comma-delimited file:
 
@@ -13,9 +41,18 @@ To save an Excel file as a comma-delimited file:
 - Next to "Format:", click the drop-down menu and select "Comma Separated Values (CSV)"
 - Click "Save"
 - Excel will say something like, "This workbook contains features that will
-  not work...". Click "Continue".
+  not work...". Ignore that and click "Continue".
 - Quit Excel. It will ask you, "Do you want to save the changes you
-  made?" Click "Don't Save", because you just saved them.
+  made?" Click "Don't Save", because you just saved them. (Excel
+  really doesn't want you to use a format other than it's own.)
+
+Note that there's also an option to save as "Tab Delimited Text". Many
+people prefer that. (I don't like tab delimiters so much, myself, as
+multiple adjacent tab characters are hard to discern by eye.)
+
+Personally, I prefer to use a vertical bar (`|`) as a delimiter
+between fields, because the data itself will seldom contain a vertical
+bar. But you can't get that from Excel.
 
 ---
 
