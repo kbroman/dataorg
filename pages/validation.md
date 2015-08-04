@@ -14,6 +14,26 @@ But one thing that seems potentially useful is the
 in Excel, to control the type of data or the values that users can
 enter into a cell.
 
+- Select a column
+- In the menu bar, choose Data → Validation
+- Choose appropriate validation criteria. For example:
+  - A whole number in some range
+  - A decimal number in some range
+  - A list of possible values
+  - Text, but with a limit on length
+
+At the same time, you could select particular data types for the
+column, such as `text`, to avoid having dates (or transcript factor
+names!) get mangled by Excel. I mentioned this before in the
+[discussion of dates](dates.html), but it's worth repeating:
+
+- Select the column
+- In the menu bar, select Format → Cells
+- Choose "Text" on the left
+
+All this may seem cumbersome, but if helps you to avoid data entry
+mistakes, it could be worth it.
+
 ---
 
 Next up: [Save the data in a non-proprietary format](csv_files.html).
