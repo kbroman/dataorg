@@ -8,7 +8,7 @@ description: "Data organization: formatting dates"
 
 
 When you're talking about formatting dates, you've got to lead with
-this [xdcd](https://xkcd.com) comic:
+this [xdcd](https://xkcd.com/1179/) comic:
 
 [![xkcd comic on date format](https://imgs.xkcd.com/comics/iso_8601.png)](https://xkcd.com/1179/)
 <br/> [xkcd.com](https://xkcd.com/1179/)
