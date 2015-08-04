@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Save the data in a non-proprietary format
-description: "Data organization: Use a non-proprietary file format"
+title: Save the data in plain text files
+description: "Data organization: Use plain text files"
 ---
 
 ```{r knitr_options, include=FALSE}
