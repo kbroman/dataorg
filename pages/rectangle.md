@@ -21,7 +21,7 @@ each with a rectangle of data. Some data don't even fit into a set of
 rectangles, but then maybe spreadsheets are not the best format for
 them, as spreadsheets seem inherently rectangular.
 
-The data files that I receive are ususally not in rectangular
+The data files that I receive are usually not in rectangular
 form. More often, there seem to be bits of data sprinkled about.
 Like this:
 

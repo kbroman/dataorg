@@ -6,7 +6,7 @@ description: "Data organization: Things to avoid"
 
 Other things to avoid, not previously mentioned or deserving further emphasis:
 
-- I once had a file with gene expression microarry data where the gene
+- I once had a file with gene expression microarray data where the gene
   identifiers were long integers. It had gone through Excel at some
   point, and the identifier `1000000` had been changed to `1e6`, which
   of course didn't match what is the file with gene annotations.

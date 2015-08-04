@@ -17,7 +17,7 @@ Not everyone agrees with me (for example,
 state a preference for leaving cells blank), but I'd prefer to have
 "`NA`" or even a hyphen in the cells with missing data, to make sure
 it's clear that the data are known to be missing rather than
-unintentially left blank.
+unintentionally left blank.
 
 I also often see cells left blank when a single value is meant to be
 repeated multiple times. For example, one might put the date in only a
