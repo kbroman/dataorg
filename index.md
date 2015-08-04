@@ -14,7 +14,7 @@ receive.
 
 But in many cases, I have to spend **a lot** of time writing scripts
 to rearrange the layout of the data. And how would you like your data
-analysts to spend their time? Reorganizing data, or really exploring
+analysts to spend their time? Reorganizing data, or really analyzing
 data?
 
 Most of my collaborators enter and store their data in spreadsheets,
