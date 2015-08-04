@@ -64,3 +64,5 @@ excel_fig(mat, hilitcells=hilitcells, hilitcolor=hilitcolor)
 ---
 
 Next up: [Choose good names for things](names.html).
+
+(Previous: [No calculations in the raw data files](no_calculations.html).)

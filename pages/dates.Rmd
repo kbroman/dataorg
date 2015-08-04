@@ -63,3 +63,5 @@ Use care about dates, and be consistent.
 ---
 
 Next up: [Fill in all of the cells](no_empty_cells.html).
+
+(Previous: [Be consistent](consistency.html).)

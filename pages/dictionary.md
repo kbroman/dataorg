@@ -18,3 +18,5 @@ includes an overview of the project and data.
 ---
 
 Next up: [No calculations in the raw data files](no_calculations.html).
+
+(Previous: [Make it a rectangle](rectangle.html).)

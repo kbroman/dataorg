@@ -20,3 +20,5 @@ To save an Excel file as a comma-delimited file:
 ---
 
 Next up: [Other things to avoid](avoid.html).
+
+(Previous: [Use data validation to avoid data entry mistakes](validation.html).)

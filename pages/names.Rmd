@@ -18,3 +18,5 @@ description: "Data organization: naming things"
 ---
 
 Next up: [Make backups](backups.html).
+
+(Previous: [Don't use font color or highlighting as data](no_highlighting.html).)

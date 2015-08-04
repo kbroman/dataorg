@@ -16,3 +16,5 @@ description: "Data organization: Make backups"
 ---
 
 Next up: [Use data validation to avoid data entry mistakes](validation.html).
+
+(Previous: [Choose good names for things](names.html).)

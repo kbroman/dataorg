@@ -98,3 +98,5 @@ particular day, like this:
 ---
 
 Next up: [Create a data dictionary](dictionary.html).
+
+(Previous: [Put just one thing in a cell](one_thing_per_cell.html).)

@@ -28,3 +28,5 @@ do your calculations and graphs in the copy.
 ---
 
 Next up: [Don't use font color or highlighting as data](no_highlighting.html).
+
+(Previous: [Create a data dictionary](dictionary.html).)

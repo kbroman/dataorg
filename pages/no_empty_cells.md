@@ -48,3 +48,5 @@ the discussion of layout), with each row being one replicate, as follows:
 ---
 
 Next up: [Put just one thing in a cell](one_thing_per_cell.html).
+
+(Previous: [Write dates as `YYYY-MM-DD`](dates.html).)
