@@ -9,6 +9,8 @@ other resources.
 
 - [Leek Group guide to data sharing](https://github.com/jtleek/datasharing)
 - [Data Carpentry](http://datacarpentry.org/) [lesson on using spreadsheets](https://github.com/datacarpentry/excel-ecology)
+- [Releasing statistics in spreadsheets (pdf)](https://gss.civilservice.gov.uk/wp-content/uploads/2012/12/Releasing-statistics-in-spreadsheets-Good-practice-guidance.pdf),
+  by [UK Government Statistical Service](https://gss.civilservice.gov.uk/)
 - [Hadley Wickham](http://had.co.nz/)'s [paper on tidy data](http://www.jstatsoft.org/v59/i10/paper)
 - [Video of Hadley Wickham talking about tidy data](http://vimeo.com/33727555)
 - EP White et al. (2013)
