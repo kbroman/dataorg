@@ -4,16 +4,57 @@ title: Create a data dictionary
 description: "Data organization: create a data dictionary"
 ---
 
-Have a separate file that explains what all of the variables are.
-- Exact name as in the data file
-- A longer name that might be used in data visualizations
-- An explanation
-- Units
-- Minimum and maximum values, perhaps
+```{r knitr_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
+                      fig.path="Figs/no_empty_cells-",
+                      dev="svg", echo=FALSE)
+library(broman)
+```
+
+It's helpful to have a separate file
+that explains what all of the variables are. It's super helpful if
+this is laid out in rectangular form, so that the data analyst can
+make use of it in analyses.
+
+Such a "data dictionary" might contain:
+
+- The exact variable name as in the data file
+- A version of that might be used in data visualizations
+- A longer explanation of what the variable.
+- The measurement units
+- Expected minimum and maximum values, perhaps.
 
 This is part of the *metadata* that you'll want to prepare:
 information *about* the data. You'll also want a `ReadMe` file that
 includes an overview of the project and data.
+
+Here's an example data dictionary.
+
+```{r data_dict, fig.width=9.5, fig.height=2.5}
+mat <- data.frame(name=c("mouse", "sex", "sac_date", "partial_inflation", "coat_color",
+                          "crumblers", "diet_days"),
+                  plot_name=c("Mouse", "Sex", "Date of sac", "Partial inflation", "Coat color",
+                              "Crumblers", "Days on diet"),
+                  group=c("demographic", "demographic", "demographic", "clinical", "demographic", "clinical", "clinical"),
+                  description=c("Animal identifier", "Male (M) or Female (F)",
+                                "Date mouse was sacrificed",
+                                "Indicates if mouse showed partial pancreatic inflation",
+                                "Coat color, by visual inspection",
+                                "Indicates if mouse stored food in their bedding",
+                                "Number of days on high-fat diet"),
+                  stringsAsFactors=FALSE)
+excel_fig(mat, cellwidth=c(rep(130, 4), 400))
+```
+
+Note that this is a rectangular data set, like any other. The first
+column contains the variable names. The second column is more readable
+version, as might be used in data visualizations. The third column
+groups the variables into different categories, which might
+also be used in data visualizations. The last column is a description.
+
+Lots of other information could be included. For example, information about
+the allowed values for the variables would be helpful in identifying
+data entry errors.
 
 ---
 
