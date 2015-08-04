@@ -16,12 +16,12 @@ Here's an example:
 ![plot of chunk example_rectangle](Figs/no_empty_cells-example_rectangle-1.svg) 
 
 Some data sets won't fit nicely into a rectangle, but they'll usually
-fit into a set of rectangles, in which you can make a set of Excel files,
+fit into a set of rectangles, in which case you can make a set of Excel files,
 each with a rectangle of data. Some data don't even fit into a set of
 rectangles, but then maybe spreadsheets are not the best format for
 them, as spreadsheets seem inherently rectangular.
 
-The data files that I receive are not very often in rectangular
+The data files that I receive are ususally not in rectangular
 form. More often, there seem to be bits of data sprinkled about.
 Like this:
 
@@ -78,10 +78,14 @@ assay measurement on a subject. Reorganizing the data into a "tidy"
 format can simplify later analysis. But the rectangular aspect is the
 most important part.
 
-Another issue I see is the use of two rows of header names, often with
-blank cells or merged cells, like this:
+Another issue I see is the use of two rows of header names, like this:
 
 ![plot of chunk bad_example_5](Figs/no_empty_cells-bad_example_5-1.svg) 
+
+This is the sort of situation where I'll see merged cells: merging the
+"`week 4`" cell with the two cells following, so that the text is
+centered above the three columns with "`date`", "`weight`", and
+"`glucose`".
 
 I'd prefer to have the week information within the variable name, like
 this:

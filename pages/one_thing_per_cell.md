@@ -19,7 +19,7 @@ just write `45` and put the units in the column name, such as
 put the units in a separate [data dictionary](dictionary.html).
 
 Another common situation is to include a note within a cell, with the
-data: "`0 (below threshold)`". Instead, write "`0`" and include a
+data, like "`0 (below threshold)`". Instead, write "`0`" and include a
 separate column with notes.
 
 Finally, don't merge cells. It might look pretty, but you end up
