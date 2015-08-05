@@ -5,9 +5,7 @@ description: "Data organization: Don't use font color or highlighting as data."
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/no_highlighting-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -29,7 +27,7 @@ mat$date[7] <- mat$date[6]
 
 hilitcells <- "C5"
 
-excel_fig(mat, hilitcells=hilitcells)
+excel_fig(mat, hilitcells=hilitcells, cellwidth=100, direct2svg=TRUE)
 ```
 
 It would be better to include an additional column that indicates
@@ -38,7 +36,7 @@ that information for use in the later analysis.
 
 ```{r outlier_column, fig.width=5/4*5}
 mat$outlier <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
-excel_fig(mat)
+excel_fig(mat, cellwidth=100, direct2svg=TRUE)
 ```
 
 Here's an example with males highlighted in blue and females in
@@ -58,7 +56,7 @@ hilitcells <- c(paste0(rep(LETTERS[1:3], each=3), 1+c(2,3,6)),
                 paste0(rep(LETTERS[1:3], each=4), 1+c(1,4,5,7)))
 hilitcolor <- c(rep("#F0DCDB", 3*3), rep("#DDE6F1", 4*3))
 
-excel_fig(mat, hilitcells=hilitcells, hilitcolor=hilitcolor)
+excel_fig(mat, hilitcells=hilitcells, hilitcolor=hilitcolor, cellwidth=100, direct2svg=TRUE)
 ```
 
 ---
