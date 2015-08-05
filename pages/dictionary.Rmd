@@ -28,7 +28,7 @@ includes an overview of the project and data.
 
 Here's an example data dictionary.
 
-```{r data_dict, fig.width=9.5, fig.height=2.5}
+```{r data_dict}
 mat <- data.frame(name=c("mouse", "sex", "sac_date", "partial_inflation", "coat_color",
                           "crumblers", "diet_days"),
                   plot_name=c("Mouse", "Sex", "Date of sac", "Partial inflation", "Coat color",

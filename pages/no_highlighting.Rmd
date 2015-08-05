@@ -34,7 +34,7 @@ It would be better to include an additional column that indicates
 the outliers. The highlighting is nice visually, but it's hard to grab
 that information for use in the later analysis.
 
-```{r outlier_column, fig.width=5/4*5}
+```{r outlier_column}
 mat$outlier <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
 excel_fig(mat, cellwidth=100, direct2svg=TRUE)
 ```
