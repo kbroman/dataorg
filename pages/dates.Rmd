@@ -38,9 +38,14 @@ that are going to contain dates, so that it doesn't do anything to them:
 - In the menu bar, select Format → Cells
 - Choose "Text" on the left
 
+Alternatively, you could create three separate columns with year,
+month, and day. Those will be ordinary integers, and so Excel won't
+mess them up.
+
 But really what I wanted to emphasize here: be consistent in the way
 in which you write dates. And really, always use the `YYYY-MM-DD`
-format, as in the [xkcd comic, above](https://xkcd.com/1179/).
+format, as in the [xkcd comic, above](https://xkcd.com/1179/) (or
+put the year, month, and day in separate columns, if you want).
 
 I have an old Excel spreadsheet in front of me that looks a bit like
 this:
@@ -49,11 +54,11 @@ this:
 mat <- data.frame(Date=c("", "", "12/6/2005", rep("", 4)),
                   "Assay date"=c("12/9/05", "12/9/05", "e", "e", "e", "1/11/2006", "1/11/2006"),
                   "Weight"=c(54.9, 45.3, 47, 45.7, 52.9, 46.1, 38.6),
-                  stringsAsFactors=FALSE)
+                  stringsAsFactors=FALSE, check.names=FALSE)
 excel_fig(mat, direct2svg=TRUE, cellwidth=90)
 ```
 
-I never did quite understand what those `e`'s were for, but having
+I don't quite remember what those `e`'s were for, but having
 different date formats within a column can cause headaches later.
 
 Use care about dates, and be consistent.

@@ -35,9 +35,14 @@ that are going to contain dates, so that it doesn't do anything to them:
 - In the menu bar, select Format → Cells
 - Choose "Text" on the left
 
+Alternatively, you could create three separate columns with year,
+month, and day. Those will be ordinary integers, and so Excel won't
+mess them up.
+
 But really what I wanted to emphasize here: be consistent in the way
 in which you write dates. And really, always use the `YYYY-MM-DD`
-format, as in the [xkcd comic, above](https://xkcd.com/1179/).
+format, as in the [xkcd comic, above](https://xkcd.com/1179/) (or
+put the year, month, and day in separate columns, if you want).
 
 I have an old Excel spreadsheet in front of me that looks a bit like
 this:
@@ -103,7 +108,7 @@ this:
     <rect x="271" y="27" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="316" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Weight</text>
     <rect x="181" y="27" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
-    <text x="226" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Assay.date</text>
+    <text x="226" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Assay date</text>
     <rect x="91" y="27" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="136" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Date</text>
     <rect x="1" y="27" width="90" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
@@ -117,7 +122,7 @@ this:
     <rect x="1" y="1" width="90" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
 </svg>
 
-I never did quite understand what those `e`'s were for, but having
+I don't quite remember what those `e`'s were for, but having
 different date formats within a column can cause headaches later.
 
 Use care about dates, and be consistent.
