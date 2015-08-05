@@ -5,9 +5,7 @@ description: "Data organization: formatting dates"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/dates-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -47,12 +45,12 @@ format, as in the [xkcd comic, above](https://xkcd.com/1179/).
 I have an old Excel spreadsheet in front of me that looks a bit like
 this:
 
-```{r bad_dates, fig.width=5/4*3, fig.height=2.5/8*9}
+```{r bad_dates}
 mat <- data.frame(Date=c("", "", "12/6/2005", rep("", 4)),
                   "Assay date"=c("12/9/05", "12/9/05", "e", "e", "e", "1/11/2006", "1/11/2006"),
                   "Weight"=c(54.9, 45.3, 47, 45.7, 52.9, 46.1, 38.6),
                   stringsAsFactors=FALSE)
-excel_fig(mat)
+excel_fig(mat, direct2svg=TRUE, cellwidth=90)
 ```
 
 I never did quite understand what those `e`'s were for, but having
