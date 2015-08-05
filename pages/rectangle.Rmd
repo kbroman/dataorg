@@ -5,9 +5,7 @@ description: "Data organization: Use a rectangular layout"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/rectangle-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -18,7 +16,7 @@ corresponding to variables. The first row should contain variable
 names. (*Please don't use more than one row for the variable names.*)
 Here's an example:
 
-```{r example_rectangle, fig.height=2}
+```{r example_rectangle}
 set.seed(20150803)
 mat <- data.frame(id=101:105,
                   sex=sample(c("Male", "Female"), 5, replace=TRUE),
@@ -27,7 +25,7 @@ mat <- data.frame(id=101:105,
                   triglyc=myround(runif(5, 70, 300), 1),
                   stringsAsFactors=FALSE)
 
-excel_fig(mat)
+excel_fig(mat, direct2svg=TRUE)
 ```
 
 Some data sets won't fit nicely into a rectangle, but they'll usually
@@ -40,7 +38,7 @@ The data files that I receive are usually not in rectangular
 form. More often, there seem to be bits of data sprinkled about.
 Like this:
 
-```{r bad_example_1, fig.height=2.8}
+```{r bad_example_1}
 mat2 <- t(mat)
 
 mat2 <- cbind(rownames(mat2), mat2)
@@ -52,12 +50,12 @@ mat2 <- rbind(rep("", 6),
               mat2[c(1,4),])
 mat2[c(2,5,8),1] <- ""
 
-excel_fig(mat2, col_names=FALSE)
+excel_fig(mat2, col_names=FALSE, direct2svg=TRUE)
 ```
 
 Or maybe like this:
 
-```{r bad_example_2, fig.height=2.8, fig.width=6}
+```{r bad_example_2}
 mat3 <- rbind(c("1MIN", rep("", 6)),
               c("", "", "Normal", "", "", "Mutant", ""),
               c("B6", 146.6, 138.6, 155.6, 166.0, 179.3, 186.9),
@@ -68,7 +66,7 @@ mat3 <- rbind(c("1MIN", rep("", 6)),
               c("B6", 333.6, 353.6, 408.8, 450.6, 474.4, 423.8),
               c("BTBR", 514.4, 610.6, 597.9, 412.1, 447.4, 446.5))
 
-excel_fig(mat3, col_names=FALSE)
+excel_fig(mat3, col_names=FALSE, direct2svg=TRUE)
 ```
 
 In both of these cases, the data analyst has to study the layout, figure out
@@ -77,7 +75,7 @@ what everything means, and then spend some time rearranging things.
 Another recent example: a separate worksheet for each subject, each in
 a complicated format like this:
 
-```{r bad_example_3, fig.height=3.5, fig.width=8}
+```{r bad_example_3}
 mat4 <- rbind(rep("", 7),
               c("Date", "11/3/14", rep("", 5)),
               c("Days on diet", "126", rep("", 5)),
@@ -107,7 +105,8 @@ for(i in 7:9) {
       mat4[i+4,7] <- round(sd(z), 2)
     }
 }
-excel_fig(mat4)
+excel_fig(mat4, cellwidth=c(90, 105, 95, rep(90, 5)),
+          fig_width=680, fig_height=330, direct2svg=TRUE)
 ```
 
 If all of the worksheets have exactly the same layout, then it's not
@@ -121,7 +120,7 @@ measurements on one worksheet.
 Sometimes it's hard to see how to reorganize things as a
 rectangle. Consider this example:
 
-```{r bad_example_4, fig.width=8, fig.height=5}
+```{r bad_example_4}
 mat5 <- rbind(c("", "GTT date", "GTT weight", "time", "glucose mg/dl", "insulin ng/ml"),
               c("321", "2/9/15", "24.5",  0,  99.2, "lo off curve"),
               c("", "", "",               5, 349.3, 0.205),
@@ -138,13 +137,14 @@ mat5 <- rbind(c("", "GTT date", "GTT weight", "time", "glucose mg/dl", "insulin 
               c("323", "2/9/15", "24.7",  0, 198.5, 0.151),
               c("", "", "",               5, 530.6, "off curve lo"))
 
-excel_fig(mat5, col_names=FALSE)
+excel_fig(mat5, col_names=FALSE, cellwidth=c(85, 85, 105, 105, 85, 110, 110),
+          direct2svg=TRUE)
 ```
 
 Well, it's sort of a rectangle; we could just fill in the empty cells,
 like this:
 
-```{r bad_example_4_filled, fig.width=8, fig.height=5}
+```{r bad_example_4_filled}
 mat5[1,1] <- "id"
 for(i in 1:3) {
     mat5[3:7, i] <- mat5[2,i]
@@ -152,7 +152,8 @@ for(i in 1:3) {
     mat5[15, i] <- mat5[14,i]
 }
 
-excel_fig(mat5, col_names=FALSE)
+excel_fig(mat5, col_names=FALSE, cellwidth=c(85, 85, 105, 105, 85, 110, 110),
+          direct2svg=TRUE)
 ```
 
 But it seems wrong to repeat the weights like that. It's better to
@@ -163,17 +164,19 @@ levels at different times afterwards).
 
 So you'd have one table with the weights, like this:
 
-```{r bad_example_4_weights, fig.width=6/5*4, fig.height=5/16*5}
+```{r bad_example_4_weights}
 mat5wt <- mat5[c(1,2,8,14), 1:3]
-excel_fig(mat5wt, col_names=FALSE)
+excel_fig(mat5wt, col_names=FALSE, cellwidth=c(85, 85, 105, 105),
+          direct2svg=TRUE)
 ```
 
 And then another rectangle with the GTT results, like this:
 
-```{r bad_example_4_gtt, fig.width=6, fig.height=5}
+```{r bad_example_4_gtt}
 mat5gtt <- mat5[,c(1, 4:6)]
 mat5gtt[1,2] <- "GTT time"
-excel_fig(mat5gtt, col_names=FALSE)
+excel_fig(mat5gtt, col_names=FALSE, cellwidth=c(85, 85, 85, 110, 110),
+          direct2svg=TRUE)
 ```
 
 This is an example of what's called "tidy" data (see [the paper](http://www.jstatsoft.org/v59/i10/paper) by
@@ -185,7 +188,7 @@ most important part.
 
 Another issue I see is the use of two rows of header names, like this:
 
-```{r bad_example_5, fig.width=11, fig.height=2.5}
+```{r bad_example_5}
 mat6 <- rbind(c("", "", "week 4", "", "", "week 6", "", "", "week 8", "", ""),
               c("Mouse ID", "SEX", rep(c("date", "weight", "glucose"), 3)),
               c("3005", "M", "3/30/2007",  19.3, 635.0, "4/11/2007",  31,   460.7, "4/27/2007",  39.6, 530.2),
@@ -194,7 +197,8 @@ mat6 <- rbind(c("", "", "week 4", "", "", "week 6", "", "", "week 8", "", ""),
               c("3449", "M", "1/5/2007",   27.5, 121.0, "1/19/2007",  42.9, 191.3, "2/2/2007",   56.7, 182.5),
               c("3499", "F", "1/5/2007",   19.8, 220.2, "1/19/2007",  36.6, 556.9, "2/2/2007",   43.6, 446.0))
 
-excel_fig(mat6, col_names=FALSE)
+excel_fig(mat6, cellwidth=c(85, 85, 85, 105, 85, 95, 105, 85, 95, 105, 85, 95),
+          fig_width=780, fig_height=150, col_names=FALSE, direct2svg=TRUE)
 ```
 
 This is the sort of situation where I'll see merged cells: merging the
@@ -205,14 +209,15 @@ centered above the three columns with "`date`", "`weight`", and
 I'd prefer to have the week information within the variable name, like
 this:
 
-```{r bad_example_5_1colname, fig.width=11, fig.height=2.5/8*7}
+```{r bad_example_5_1colname}
 mat6 <- mat6[-1,]
 wk <- c(4, 6, 8)
 firstcol <- c(3,6,9)
 for(i in seq(along=firstcol))
     mat6[1,firstcol[i]+0:2] <- paste0(mat6[1,firstcol[i]+0:2], "_", wk[i])
 
-excel_fig(mat6, col_names=FALSE)
+excel_fig(mat6, cellwidth=c(85, 85, 85, 105, 85, 95, 105, 85, 95, 105, 85, 95),
+          fig_width=780, fig_height=150, col_names=FALSE, direct2svg=TRUE)
 ```
 
 
@@ -221,7 +226,7 @@ Even better would be to make it a "tidy" data set
 with each row being a subject on a
 particular day, like this:
 
-```{r bad_example_5_tidy, fig.width=11*7/12, fig.height=2.5/8*17}
+```{r bad_example_5_tidy}
 mat6b <- rbind(cbind(mat6[,1:2], week=rep(4,6), mat6[,3:5]),
                cbind(mat6[-1,1:2], week=rep(6,5), mat6[-1,6:8]),
                cbind(mat6[-1,1:2], week=rep(8,5), mat6[-1,9:11]))
@@ -229,7 +234,7 @@ colnames(mat6b) <- c("mouse_id", "sex", "week", "date", "glucose", "weight")
 mat6b <- mat6b[-1,]
 mat6b <- mat6b[order(as.numeric(mat6b[,1]), mat6b[,3]),]
 
-excel_fig(mat6b)
+excel_fig(mat6b, cellwidth=c(85, 85, 85, 85, 100, 85, 85), direct2svg=TRUE)
 ```
 
 **Make it a rectangle!** (Or, if necessary, make it a set of
