@@ -63,6 +63,11 @@ Note that there's also an option to save as "Tab Delimited Text". Many
 people prefer that. (I don't like tab delimiters so much, myself, as
 multiple adjacent tab characters are hard to discern by eye.)
 
+Also note that, if your Excel file *did* contain critical features
+that will not work when saved as a plain text file,
+[that's a problem](https://twitter.com/infotroph/status/628659784913285120).
+For your primary data file, keep things simple.
+
 Personally, I prefer to use a vertical bar (`|`) as a delimiter
 between fields, because the data itself will seldom contain a vertical
 bar. But you can't get that from Excel.
