@@ -5,7 +5,7 @@ description: "Data organization: Use plain text files"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -14,7 +14,7 @@ tab delimiters.  I generally use comma-delimited (CSV) files.
 
 So a spreadsheet like this:
 
-```{r example_rectangle, results="asis"}
+```{r example_rectangle}
 set.seed(20150803)
 mat <- data.frame(id=101:105,
                   sex=sample(c("Male", "Female"), 5, replace=TRUE),
