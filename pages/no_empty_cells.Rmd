@@ -5,9 +5,7 @@ description: "Data organization: No empty cells"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/no_empty_cells-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -28,7 +26,7 @@ mat <- data.frame(id=101:107,
                   date=c("2015-06-14", "", "2015-06-18", "", "", "2015-06-20", ""),
                   glucose=myround(c(149.3, 95.3, 97.5, 117.0, 108.0, 149.0, 169.4), 1),
                   stringsAsFactors=FALSE)
-excel_fig(mat)
+excel_fig(mat, cellwidth=110, direct2svg=TRUE)
 ```
 
 **Don't do that!** If the rows were to be sorted at some point, that
@@ -40,13 +38,13 @@ It's much better to fill them all in, like this:
 mat$date[2] <- mat$date[1]
 mat$date[4:5] <- mat$date[3]
 mat$date[7] <- mat$date[6]
-excel_fig(mat)
+excel_fig(mat, cellwidth=110, direct2svg=TRUE)
 ```
 
 I also see this sort of thing for information about different
 treatments. For example, I recently saw a file like the following:
 
-```{r more_skipping_cells, fig.width=8, fig.height=1.5}
+```{r more_skipping_cells}
 mat2 <- data.frame(c("", "strain", "A", "B"),
                    c("1 min", "normal", "147", "246"),
                    c("", "", "139", "240"),
@@ -58,7 +56,7 @@ mat2 <- data.frame(c("", "strain", "A", "B"),
                    c("", "", "474", "447"),
                     stringsAsFactors=FALSE)
 
-excel_fig(mat2, col_names=FALSE)
+excel_fig(mat2, col_names=FALSE, fig_width=690, direct2svg=TRUE)
 ```
 
 We'll [talk more about layout shortly](rectangle.html), but while it's sort
@@ -70,7 +68,7 @@ better would be to make a "tidy" version of the data
 ([more on what is meant by "tidy" later](rectangle.html), as part of
 the discussion of layout), with each row being one replicate, as follows:
 
-```{r more_skipping_cells_fixed, fig.height=4, fig.width=5/4*6}
+```{r more_skipping_cells_fixed}
 mat2b <- data.frame(strain=rep(c("A", "A", "B", "B"), 4),
                     genotype=rep(rep(c("normal", "mutant"), each=4),2),
                     min=rep(c(1, 5), each=8),
@@ -81,7 +79,7 @@ mat2b <- data.frame(strain=rep(c("A", "A", "B", "B"), 4),
                                "451", "474", "412", "447"),
                     stringsAsFactors=FALSE)
 
-excel_fig(mat2b)
+excel_fig(mat2b, cellwidth=90, direct2svg=TRUE)
 ```
 
 **No empty cells!**
