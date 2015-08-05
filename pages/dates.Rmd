@@ -38,9 +38,10 @@ that are going to contain dates, so that it doesn't do anything to them:
 - In the menu bar, select Format → Cells
 - Choose "Text" on the left
 
-Alternatively, you could create three separate columns with year,
-month, and day. Those will be ordinary integers, and so Excel won't
-mess them up.
+Alternatively, you could
+[create three separate columns](https://twitter.com/kara_woo/status/628625716590960641)
+with year, month, and day. Those will be ordinary integers, and so
+Excel won't mess them up.
 
 But really what I wanted to emphasize here: be consistent in the way
 in which you write dates. And really, always use the `YYYY-MM-DD`
