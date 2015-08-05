@@ -5,9 +5,7 @@ description: "Data organization: create a data dictionary"
 ---
 
 ```{r knitr_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=2.5,
-                      fig.path="Figs/dictionary-",
-                      dev="svg", echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE, results="asis")
 library(broman)
 ```
 
@@ -43,7 +41,7 @@ mat <- data.frame(name=c("mouse", "sex", "sac_date", "partial_inflation", "coat_
                                 "Indicates if mouse stored food in their bedding",
                                 "Number of days on high-fat diet"),
                   stringsAsFactors=FALSE)
-excel_fig(mat, cellwidth=c(rep(130, 4), 400))
+excel_fig(mat, fig_width=690, fig_height=190, cellwidth=c(rep(130, 4), 400), direct2svg=TRUE)
 ```
 
 Note that this is a rectangular data set, like any other. The first
