@@ -34,7 +34,7 @@ The first rule of data organization is *be consistent*.
 
 - **Use consistent subject IDs.** If sometimes it's "`153`" and
     sometimes "`mouse153`" and sometimes "`mouse-153F`" and sometimes
-    `Mouse153`, there's going to be extra work to figure out who's
+    "`Mouse153`", there's going to be extra work to figure out who's
     who.
 
 - **Use a common data layout in multiple files.** If your data are in
