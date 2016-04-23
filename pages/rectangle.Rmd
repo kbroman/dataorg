@@ -158,9 +158,9 @@ excel_fig(mat5, col_names=FALSE, cellwidth=c(85, 85, 105, 105, 85, 110, 110),
 
 But it seems wrong to repeat the weights like that. It's better to
 make two separate tables, one with the weights, and one with these
-other measurements (which are for in vivo assay, the glucose tolerance
-test: give a mouse some glucose and measure serum glucose and insulin
-levels at different times afterwards).
+other measurements (which are for an _in vivo_ assay, the glucose
+tolerance test: give a mouse some glucose and measure serum glucose
+and insulin levels at different times afterwards).
 
 So you'd have one table with the weights, like this:
 
