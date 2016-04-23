@@ -1541,7 +1541,7 @@ assay measurement on a subject. Reorganizing the data into a "tidy"
 format can simplify later analysis. But the rectangular aspect is the
 most important part.
 
-Another issue I see is the use of two rows of header names, like this:
+Another issue I often see is the use of two rows of header names, like this:
 
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="782px" height="152px" viewBox="0 0 1112 210" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
