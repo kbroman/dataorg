@@ -179,6 +179,18 @@ excel_fig(mat5gtt, col_names=FALSE, cellwidth=c(85, 85, 85, 110, 110),
           direct2svg=TRUE)
 ```
 
+I can't leave those "`lo off curve`" and "`off curve lo`" notes in
+there, though. Best to put "`NA`" and add a "note" column.
+
+```{r bad_example_4_gtt_add_notes}
+mat5gtt[c(2,7,15),4] <- "NA"
+mat5gtt <- cbind(mat5gtt, c("note", rep("", 14)))
+mat5gtt[c(2,7,15),5] <- "insulin below curve"
+excel_fig(mat5gtt, col_names=FALSE, cellwidth=c(85, 85, 85, 110, 110, 160),
+          direct2svg=TRUE)
+```
+
+
 This is an example of what's called "tidy" data (see [the paper](http://www.jstatsoft.org/v59/i10/paper) by
 [Hadley Wickham](http://had.co.nz/)): each row is an experimental
 unit, which is usually just a subject but in this case is a single
@@ -186,7 +198,7 @@ assay measurement on a subject. Reorganizing the data into a "tidy"
 format can simplify later analysis. But the rectangular aspect is the
 most important part.
 
-Another issue I see is the use of two rows of header names, like this:
+Another issue I often see is the use of two rows of header names, like this:
 
 ```{r bad_example_5}
 mat6 <- rbind(c("", "", "week 4", "", "", "week 6", "", "", "week 8", "", ""),

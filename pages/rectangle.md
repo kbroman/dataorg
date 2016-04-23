@@ -1121,9 +1121,9 @@ like this:
 
 But it seems wrong to repeat the weights like that. It's better to
 make two separate tables, one with the weights, and one with these
-other measurements (which are for in vivo assay, the glucose tolerance
-test: give a mouse some glucose and measure serum glucose and insulin
-levels at different times afterwards).
+other measurements (which are for an _in vivo_ assay, the glucose
+tolerance test: give a mouse some glucose and measure serum glucose
+and insulin levels at different times afterwards).
 
 So you'd have one table with the weights, like this:
 
@@ -1334,6 +1334,205 @@ And then another rectangle with the GTT results, like this:
     <text x="128.5" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >A</text>
     <rect x="1" y="1" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
 </svg>
+
+I can't leave those "`lo off curve`" and "`off curve lo`" notes in
+there, though. Best to put "`NA`" and add a "note" column.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="637px" height="418px" viewBox="0 0 637 418" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect x="476" y="391" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >insulin below curve</text>
+    <rect x="366" y="391" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >NA</text>
+    <rect x="256" y="391" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >530.6</text>
+    <rect x="171" y="391" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >5</text>
+    <rect x="86" y="391" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >323</text>
+    <rect x="1" y="391" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >15</text>
+    <rect x="476" y="365" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="365" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.151</text>
+    <rect x="256" y="365" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >198.5</text>
+    <rect x="171" y="365" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0</text>
+    <rect x="86" y="365" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >323</text>
+    <rect x="1" y="365" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="378" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >14</text>
+    <rect x="476" y="339" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="339" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.523</text>
+    <rect x="256" y="339" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >260.7</text>
+    <rect x="171" y="339" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >120</text>
+    <rect x="86" y="339" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="339" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >13</text>
+    <rect x="476" y="313" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="313" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.5</text>
+    <rect x="256" y="313" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >232.7</text>
+    <rect x="171" y="313" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >60</text>
+    <rect x="86" y="313" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="313" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="326" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >12</text>
+    <rect x="476" y="287" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="287" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.775</text>
+    <rect x="256" y="287" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >362.3</text>
+    <rect x="171" y="287" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >30</text>
+    <rect x="86" y="287" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="287" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="300" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >11</text>
+    <rect x="476" y="261" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="261" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >2.078</text>
+    <rect x="256" y="261" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >439</text>
+    <rect x="171" y="261" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >15</text>
+    <rect x="86" y="261" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="261" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="274" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >10</text>
+    <rect x="476" y="235" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="235" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >2.228</text>
+    <rect x="256" y="235" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >297.4</text>
+    <rect x="171" y="235" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >5</text>
+    <rect x="86" y="235" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="235" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >9</text>
+    <rect x="476" y="209" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="209" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.251</text>
+    <rect x="256" y="209" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >185.8</text>
+    <rect x="171" y="209" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0</text>
+    <rect x="86" y="209" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >322</text>
+    <rect x="1" y="209" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >8</text>
+    <rect x="476" y="183" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >insulin below curve</text>
+    <rect x="366" y="183" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >NA</text>
+    <rect x="256" y="183" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >217.9</text>
+    <rect x="171" y="183" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >120</text>
+    <rect x="86" y="183" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="183" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >7</text>
+    <rect x="476" y="157" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="157" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.122</text>
+    <rect x="256" y="157" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >99.9</text>
+    <rect x="171" y="157" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >60</text>
+    <rect x="86" y="157" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="157" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >6</text>
+    <rect x="476" y="131" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="131" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.175</text>
+    <rect x="256" y="131" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >312</text>
+    <rect x="171" y="131" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >30</text>
+    <rect x="86" y="131" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="131" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="144" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >5</text>
+    <rect x="476" y="105" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="105" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.129</text>
+    <rect x="256" y="105" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >286.1</text>
+    <rect x="171" y="105" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >15</text>
+    <rect x="86" y="105" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="105" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >4</text>
+    <rect x="476" y="79" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" ></text>
+    <rect x="366" y="79" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.205</text>
+    <rect x="256" y="79" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >349.3</text>
+    <rect x="171" y="79" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >5</text>
+    <rect x="86" y="79" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="79" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >3</text>
+    <rect x="476" y="53" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >insulin below curve</text>
+    <rect x="366" y="53" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >NA</text>
+    <rect x="256" y="53" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >99.2</text>
+    <rect x="171" y="53" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0</text>
+    <rect x="86" y="53" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >321</text>
+    <rect x="1" y="53" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="66" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >2</text>
+    <rect x="476" y="27" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="556" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >note</text>
+    <rect x="366" y="27" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="421" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >insulin ng/ml</text>
+    <rect x="256" y="27" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="311" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >glucose mg/dl</text>
+    <rect x="171" y="27" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="213.5" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >GTT time</text>
+    <rect x="86" y="27" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
+    <text x="128.5" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >id</text>
+    <rect x="1" y="27" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="43.5" y="40" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >1</text>
+    <rect x="476" y="1" width="160" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="556" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >E</text>
+    <rect x="366" y="1" width="110" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="421" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >D</text>
+    <rect x="256" y="1" width="110" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="311" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >C</text>
+    <rect x="171" y="1" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="213.5" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >B</text>
+    <rect x="86" y="1" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+    <text x="128.5" y="14" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >A</text>
+    <rect x="1" y="1" width="85" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
+</svg>
+
 
 This is an example of what's called "tidy" data (see [the paper](http://www.jstatsoft.org/v59/i10/paper) by
 [Hadley Wickham](http://had.co.nz/)): each row is an experimental
