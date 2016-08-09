@@ -16,3 +16,4 @@ other resources.
 - EP White et al. (2013)
   [Nine simple ways to make it easier to (re)use your data](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898).
   Ideas Ecol Evol 6:1-10
+- [3 common bad practices in sharing tables and spreadsheets and how to avoid them](http://luisdva.github.io/pls-don't-do-this/)
