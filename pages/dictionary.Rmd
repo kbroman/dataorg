@@ -18,7 +18,7 @@ Such a "data dictionary" might contain:
 
 - The exact variable name as in the data file.
 - A version of the exact variable name that might be used in data visualizations.
-- A longer explanation of the variable.
+- A longer explanation of what the variable means.
 - The measurement units.
 - Expected minimum and maximum values, perhaps.
 
