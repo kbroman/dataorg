@@ -57,7 +57,7 @@ To save an Excel file as a comma-delimited file:
   not work...". Ignore that and click "Continue".
 - Quit Excel. It will ask you, "Do you want to save the changes you
   made?" Click "Don't Save", because you just saved them. (Excel
-  really doesn't want you to use a format other than it's own.)
+  really doesn't want you to use a format other than its own.)
 
 Note that there's also an option to save as "Tab Delimited Text". Many
 people prefer that. (I don't like tab delimiters so much, myself, as
