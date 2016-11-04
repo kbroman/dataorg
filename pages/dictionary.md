@@ -13,10 +13,10 @@ make use of it in analyses.
 
 Such a "data dictionary" might contain:
 
-- The exact variable name as in the data file
-- A version of that might be used in data visualizations
-- A longer explanation of what the variable.
-- The measurement units
+- The exact variable name as in the data file.
+- A version of the exact variable name that might be used in data visualizations.
+- A longer explanation of the variable.
+- The measurement units.
 - Expected minimum and maximum values, perhaps.
 
 This is part of the *metadata* that you'll want to prepare:
