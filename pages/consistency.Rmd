@@ -59,7 +59,7 @@ The first rule of data organization is *be consistent*.
     "`off curve lo`".
 
 - **Be careful about extra spaces within cells.** A blank cell is
-    different then a cell that contains a single space. And "`male`"
+    different than a cell that contains a single space. And "`male`"
     is different from "` male `" (that is, with spaces at the
     beginning and end). These can be a headache later on.
 
