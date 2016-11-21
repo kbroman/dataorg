@@ -17,13 +17,13 @@ enter into a cell.
 - Select a column
 - In the menu bar, choose Data → Validation
 - Choose appropriate validation criteria. For example:
-  - A whole number in some range
-  - A decimal number in some range
-  - A list of possible values
-  - Text, but with a limit on length
+    - A whole number in some range
+    - A decimal number in some range
+    - A list of possible values
+    - Text, but with a limit on length
 
 At the same time, you could select particular data types for the
-column, such as `text`, to avoid having dates (or transcript factor
+column, such as `text`, to avoid having dates (or transcription factor
 names!) get mangled by Excel. I mentioned this before in the
 [discussion of dates](dates.html), but it's worth repeating:
 
