@@ -56,11 +56,21 @@ easier.
 ---
 
 With the help of [Kara Woo](https://karawoo.com), this website is now
-a proper article, available at
-[GitHub](https://github.com/kbroman/Paper_DataOrg),
-[PeerJ Preprints](https://peerj.com/preprints/3183/), and in press at
-_The American Statistician_
-([doi:10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989)).
+a proper article:
+
+> Broman KW, Woo KH (2018) Data organization in spreadsheets.
+> [_The American Statistician_](https://www.tandfonline.com/toc/utas20/current) 78:2&ndash;10
+> ([doi:10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989))
+
+The article is also available at [GitHub](https://github.com/kbroman/Paper_DataOrg) and
+[PeerJ Preprints](https://peerj.com/preprints/3183/), and note that
+it's part of a [full Data Science issue of _The American
+Statistician_](https://www.tandfonline.com/toc/utas20/72/1?nav=tocList),
+organized by [Jenny Bryan](https://github.com/jennybc) and [Hadley
+Wickham](http://hadley.nz/), which itself is [also available at PeerJ
+Preprints](https://peerj.com/collections/50-practicaldatascistats/).
+
+---
 
 The source for this tutorial is
 [on github](http://github.com/kbroman/dataorg).  If you have
