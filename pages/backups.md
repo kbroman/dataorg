@@ -7,7 +7,7 @@ description: "Data organization: Make backups"
 Make regular backups of your data. In multiple locations.
 
 There was a fire in
-[my building at UW-Madison](http://map.wisc.edu/s/njzs4hlm) a few
+[my building at UW-Madison](https://map.wisc.edu/s/njzs4hlm) a few
 years ago. An article in the paper quoted a grad student who
 despaired, "My only copy of my dissertation is in there!" Don't let
 that happen to you.

@@ -5,7 +5,7 @@ description: "Data organization: Use data validation to avoid errors"
 ---
 
 I don't have much experience with data entry. (Well, there was
-[that one time](http://kbroman.org/FruitSnacks), but it hardly counts.)
+[that one time](https://kbroman.org/FruitSnacks), but it hardly counts.)
 And so I can't give much advice about how best to ensure that the
 process is as error-free and repetitive-stress-injury-free as possible.
 

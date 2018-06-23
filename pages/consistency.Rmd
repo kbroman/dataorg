@@ -16,7 +16,7 @@ The first rule of data organization is *be consistent*.
     every cell filled in (more discussion
     [here](no_empty_cells.html)), so that one can distinguish between
     truly missing values and unintentionally missing
-    values. [R](http://www.r-project.org) users prefer "`NA`". You
+    values. [R](https://www.r-project.org) users prefer "`NA`". You
     could also use a hyphen. But stick with a single value
     throughout your data. Definitely don't use a numeric value like
     `-999` or `999`; it's easy to miss that it's intended to be

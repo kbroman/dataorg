@@ -2,7 +2,7 @@
 
 This is a tutorial on organizing data in spreadsheets.
 
-View the thing [here](http://kbroman.org/dataorg).
+View the thing [here](https://kbroman.org/dataorg).
 
 I would be glad for suggestions or corrections.
 
@@ -24,9 +24,9 @@ compile the files, you'll need the
 ---
 
 To the extent possible under law,
-[Karl Broman](http://github.com/kbroman)
+[Karl Broman](https://github.com/kbroman)
 has waived all copyright and related or neighboring rights to
-&ldquo;[data organization](http://github.com/kbroman/dataorg)&rdquo;.
+&ldquo;[data organization](https://github.com/kbroman/dataorg)&rdquo;.
 This work is published from the United States.
 <br/>
-[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)

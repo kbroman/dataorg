@@ -73,16 +73,16 @@ Preprints](https://peerj.com/collections/50-practicaldatascistats/).
 ---
 
 The source for this tutorial is
-[on github](http://github.com/kbroman/dataorg).  If you have
+[on github](https://github.com/kbroman/dataorg).  If you have
 suggestions or corrections, please
 [submit an issue](https://github.com/kbroman/dataorg/issues).
 
 
-Also see my [tutorials](http://kbroman.org/pages/tutorials)
+Also see my [tutorials](https://kbroman.org/pages/tutorials)
 on
-[git/github](http://kbroman.org/github_tutorial),
-[knitr](http://kbroman.org/knitr_knutshell),
-[GNU make](http://kbroman.org/minimal_make),
-[R packages](http://kbroman.org/pkg_primer),
-[making a web site with GitHub Pages](http://kbroman.org/simple_site),
-and [reproducible research](http://kbroman.org/steps2rr).
+[git/github](https://kbroman.org/github_tutorial),
+[knitr](https://kbroman.org/knitr_knutshell),
+[GNU make](https://kbroman.org/minimal_make),
+[R packages](https://kbroman.org/pkg_primer),
+[making a web site with GitHub Pages](https://kbroman.org/simple_site),
+and [reproducible research](https://kbroman.org/steps2rr).
