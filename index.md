@@ -55,7 +55,7 @@ easier.
 
 ---
 
-With the help of [Kara Woo](https://karawoo.com), this website is now
+In collaboration with [Kara Woo](https://karawoo.com), this website is now
 a proper article:
 
 > Broman KW, Woo KH (2018) Data organization in spreadsheets.
