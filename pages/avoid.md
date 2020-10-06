@@ -27,6 +27,15 @@ Other things to avoid, not previously mentioned or deserving further emphasis:
   cells-that-would-be-zero blank. *Don't do that!* Zeros are data, and
   you'll need them.
 
+- Spreadsheet software can have limits on the number of rows or
+  columns, which can lead to data files being truncated. For example,
+  the older versions of Excel (xls files) had a maximum of about 65k
+  rows, and its use apparently led to
+  [a loss of COVID-19 results at Public Health
+  England](https://www.bbc.com/news/technology-54423988).
+  The newer versions of Excel (xlsx files) are still limited in size,
+  to about one million rows and 16k columns.
+
 ---
 
 Next up: [Other resources](resources.html)
