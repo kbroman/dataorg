@@ -78,7 +78,7 @@ suggestions or corrections, please
 [submit an issue](https://github.com/kbroman/dataorg/issues).
 
 
-Also see my [tutorials](https://kbroman.org/pages/tutorials)
+Also see my [tutorials](https://kbroman.org/tutorials)
 on
 [git/github](https://kbroman.org/github_tutorial),
 [knitr](https://kbroman.org/knitr_knutshell),
