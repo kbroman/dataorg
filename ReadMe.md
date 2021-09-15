@@ -11,7 +11,7 @@ a proper article, available at
 [GitHub](https://github.com/kbroman/Paper_DataOrg),
 [PeerJ Preprints](https://peerj.com/preprints/3183/), and in press at
 _The American Statistician_
-([doi:10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989)).
+([doi:10/gdz6cm](https://doi.org/gdz6cm)).
 
 If you edit the files in the
 [`pages`](https://github.com/kbroman/dataorg/tree/gh-pages/pages)

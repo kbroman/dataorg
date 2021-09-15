@@ -60,7 +60,7 @@ a proper article:
 
 > Broman KW, Woo KH (2018) Data organization in spreadsheets.
 > [_The American Statistician_](https://www.tandfonline.com/toc/utas20/current) 78:2&ndash;10
-> ([doi:10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989))
+> ([doi:10/gdz6cm](https://doi.org/gdz6cm))
 
 The article is also available at [GitHub](https://github.com/kbroman/Paper_DataOrg) and
 [PeerJ Preprints](https://peerj.com/preprints/3183/), and note that
