@@ -48,7 +48,6 @@ put the year, month, and day in separate columns, if you want).
 I have an old Excel spreadsheet in front of me that looks a bit like
 this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="362px" height="236px" viewBox="0 0 362 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="271" y="209" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="316" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >38.6</text>

@@ -13,7 +13,6 @@ corresponding to variables. The first row should contain variable
 names. (*Please don't use more than one row for the variable names.*)
 Here's an example:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="482px" height="184px" viewBox="0 0 482 184" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="401" y="157" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="441" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >215.7</text>
@@ -110,7 +109,6 @@ The data files that I receive are usually not in rectangular
 form. More often, there seem to be bits of data sprinkled about.
 Like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="562px" height="262px" viewBox="0 0 562 262" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="481" y="235" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="521" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >0.73</text>
@@ -255,7 +253,6 @@ Like this:
 
 Or maybe like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="642px" height="262px" viewBox="0 0 642 262" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="561" y="235" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="601" y="248" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >446.5</text>
@@ -424,7 +421,6 @@ what everything means, and then spend some time rearranging things.
 Another recent example: a separate worksheet for each subject, each in
 a complicated format like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="682px" height="332px" viewBox="0 0 742 366" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="651" y="339" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="696" y="352" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >2.17</text>
@@ -662,7 +658,6 @@ measurements on one worksheet.
 Sometimes it's hard to see how to reorganize things as a
 rectangle. Consider this example:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="687px" height="418px" viewBox="0 0 687 418" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="576" y="391" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="631" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >off curve lo</text>
@@ -892,7 +887,6 @@ rectangle. Consider this example:
 Well, it's sort of a rectangle; we could just fill in the empty cells,
 like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="687px" height="418px" viewBox="0 0 687 418" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="576" y="391" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="631" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >off curve lo</text>
@@ -1127,7 +1121,6 @@ and insulin levels at different times afterwards).
 
 So you'd have one table with the weights, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="382px" height="132px" viewBox="0 0 382 132" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="276" y="105" width="105" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="328.5" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >24.7</text>
@@ -1172,7 +1165,6 @@ So you'd have one table with the weights, like this:
 
 And then another rectangle with the GTT results, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="477px" height="418px" viewBox="0 0 477 418" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="366" y="391" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="421" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >off curve lo</text>
@@ -1338,7 +1330,6 @@ And then another rectangle with the GTT results, like this:
 I can't leave those "`lo off curve`" and "`off curve lo`" notes in
 there, though. Best to put "`NA`" and add a "note" column.
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="637px" height="418px" viewBox="0 0 637 418" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="476" y="391" width="160" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="556" y="404" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >insulin below curve</text>
@@ -1543,7 +1534,6 @@ most important part.
 
 Another issue I often see is the use of two rows of header names, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="782px" height="152px" viewBox="0 0 1112 210" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="1016" y="183" width="95" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="1063.5" y="196" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >446</text>
@@ -1746,7 +1736,6 @@ centered above the three columns with "`date`", "`weight`", and
 I'd prefer to have the week information within the variable name, like
 this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="782px" height="152px" viewBox="0 0 1112 184" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="1016" y="157" width="95" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="1063.5" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >446</text>
@@ -1923,7 +1912,6 @@ Even better would be to make it a "tidy" data set
 with each row being a subject on a
 particular day, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="612px" height="444px" viewBox="0 0 612 444" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="526" y="417" width="85" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="568.5" y="430" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >446</text>

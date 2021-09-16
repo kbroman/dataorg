@@ -18,7 +18,6 @@ I also often see cells left blank when a single value is meant to be
 repeated multiple times. For example, one might put the date in only a
 few cells, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="442px" height="236px" viewBox="0 0 442 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="331" y="209" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="386" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >169.4</text>
@@ -98,7 +97,6 @@ date column would be completely mangled.
 
 It's much better to fill them all in, like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="442px" height="236px" viewBox="0 0 442 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="331" y="209" width="110" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="386" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >169.4</text>
@@ -176,7 +174,6 @@ It's much better to fill them all in, like this:
 I also see this sort of thing for information about different
 treatments. For example, I recently saw a file like the following:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="692px" height="132px" viewBox="0 0 802 132" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="721" y="105" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="761" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >447</text>
@@ -288,7 +285,6 @@ better would be to make a "tidy" version of the data
 ([more on what is meant by "tidy" later](rectangle.html), as part of
 the discussion of layout), with each row being one replicate, as follows:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="542px" height="470px" viewBox="0 0 542 470" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="451" y="443" width="90" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="496" y="456" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >447</text>

@@ -11,7 +11,6 @@ tab delimiters.  I generally use comma-delimited (CSV) files.
 
 So a spreadsheet like this:
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="482px" height="184px" viewBox="0 0 482 184" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="401" y="157" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="441" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >215.7</text>

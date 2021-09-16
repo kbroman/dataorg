@@ -7,3 +7,5 @@ all: $(DEST_MD)
 
 pages/%.md: pages/%.Rmd
 	cd $(<D);R $(R_OPTS) -e "knitr::knit('$(<F)')"
+	sed /^\<\?xml/d $@ > tmp
+	mv tmp $@

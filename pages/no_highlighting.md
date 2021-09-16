@@ -13,7 +13,6 @@ with an indicator variable (for example, `"trusted"`, with values
 
 Here's an example in which a cell with a suspicious entry is highlighted.
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="402px" height="236px" viewBox="0 0 402 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="301" y="209" width="100" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="351" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >169.4</text>
@@ -92,7 +91,6 @@ It would be better to include an additional column that indicates
 the outliers. The highlighting is nice visually, but it's hard to grab
 that information for use in the later analysis.
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="502px" height="236px" viewBox="0 0 502 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="401" y="209" width="100" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="451" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >FALSE</text>
@@ -189,7 +187,6 @@ Here's an example with males highlighted in blue and females in
 pink. Rather than use highlighting to indicate sex, it's better to
 include a `sex` column, with values `Male` or `Female`.
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="402px" height="236px" viewBox="0 0 402 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="301" y="209" width="100" height="26" fill="#DDE6F1" stroke="#CECECE" stroke-width="1" />
     <text x="351" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >169.4</text>

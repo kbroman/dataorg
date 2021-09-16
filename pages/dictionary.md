@@ -25,7 +25,6 @@ includes an overview of the project and data.
 
 Here's an example data dictionary.
 
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="692px" height="192px" viewBox="0 0 922 236" preserveAspectRatio="xMinYmin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <rect x="521" y="209" width="400" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="721" y="222" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Number of days on high-fat diet</text>
