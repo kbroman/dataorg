@@ -22,7 +22,7 @@ Here's an example:
     <rect x="241" y="157" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="281" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >105.2</text>
     <rect x="161" y="157" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
-    <text x="201" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Male</text>
+    <text x="201" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Female</text>
     <rect x="81" y="157" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="121" y="170" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >105</text>
     <rect x="1" y="157" width="80" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
@@ -197,7 +197,7 @@ Like this:
     <rect x="1" y="105" width="80" height="26" fill="#E9E9E9" stroke="#969696" stroke-width="1" />
     <text x="41" y="118" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >4</text>
     <rect x="481" y="79" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
-    <text x="521" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Male</text>
+    <text x="521" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Female</text>
     <rect x="401" y="79" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
     <text x="441" y="92" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" fill="#626262" font-size="16px" >Male</text>
     <rect x="321" y="79" width="80" height="26" fill="white" stroke="#CECECE" stroke-width="1" />
