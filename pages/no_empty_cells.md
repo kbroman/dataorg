@@ -8,7 +8,7 @@ description: "Data organization: No empty cells"
 
 Fill in all cells. Use some common code for missing data.
 Not everyone agrees with me (for example,
-[White et al. (2013)](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898)
+[White et al. (2013)](https://doi.org/10.4033/iee.2013.6b.6.f)
 state a preference for leaving cells blank), but I'd prefer to have
 "`NA`" or even a hyphen in the cells with missing data, to make sure
 it's clear that the data are known to be missing rather than

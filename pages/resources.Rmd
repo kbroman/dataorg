@@ -14,5 +14,5 @@ other resources.
 - [Hadley Wickham](http://had.co.nz/)'s [paper on tidy data](http://www.jstatsoft.org/v59/i10/paper)
 - [Video of Hadley Wickham talking about tidy data](http://vimeo.com/33727555)
 - EP White et al. (2013)
-  [Nine simple ways to make it easier to (re)use your data](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898).
+  [Nine simple ways to make it easier to (re)use your data](https://doi.org/10.4033/iee.2013.6b.6.f).
   Ideas Ecol Evol 6:1-10
